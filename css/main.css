@@ -1,0 +1,26 @@
+header{
+    border: 1px solid #000000;
+    height: 60px;
+}
+
+header div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header div div{
+    border: 1px solid #000000;
+    
+}
+
+#logo{
+    width: 20%;
+    margin-right: 10%;
+}
+#notice, #profile{
+    width: 10%
+}
+#search{
+    margin-right: 10%;
+}
