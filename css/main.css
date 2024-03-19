@@ -11,3 +11,27 @@ body {
     background-color: #fafbff;
 }
 
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0 0;
+    margin: 0.5rem 0 0;
+    font-size: 0.9375rem;
+    color: #1b1e24;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #eaf2f9;
+    border-radius: 0.25rem;
+  }
+
+.ti-search:before {
+	content: "\e610";
+}
+
