@@ -4,9 +4,14 @@ body{
 }
 header{
     width: 100%;
-    height: 6%;
+    height: 7%;
     display: flex;
     background-color: #F6FAF9;
+    /* border: 1px solid #000000; */
+}
+
+header div{
+    /* border: 1px solid #000000; */
 }
 
 
@@ -28,15 +33,18 @@ header{
 }
 
 #menu-button, #notice{
-    width: 5%;
+    width: 7%;
 }
 
 #menu-button{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     color: #000000;
+    background-image: url("../images/menu-button.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #profile{
@@ -44,8 +52,56 @@ header{
 }
 
 #search{
-    width: 67%;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#search div{
+    width: 50%;
+    height: 60%;
+    border: 1px solid gray;
+    border-radius: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#search-box{
+    height: 80%;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: #F6FAF9;
+    font-size: 15px;
+}
+
+#reset-button{
+    margin-right: 2%;
+    background: none;
+    border: none;
+    width: 3%;
+    height: 40%;
+    background-color: #444;
+    border-radius: 50%;
+    background-image: url("../images/search-reset.svg");
+}
+
+#search-button{
+    width: 5%;
+    background: none;
+    border: none;
+    width: 5%;
+    height: 50%;
+    background-image: url("../images/search-image.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
 
 main{
     height: 95%;
@@ -58,7 +114,7 @@ article{
 
 #menu{
     position: fixed;
-    top: 80px;
+    top: 90px;
     left: 0;
     background-color: #F6FAF9;
     width: 5%;
@@ -67,6 +123,7 @@ article{
     align-items: center;
     flex-direction: column;
     transition: all 1s;
+    font-size: 20px;
 }
 
 #menu.active{
@@ -75,15 +132,14 @@ article{
 }
 
 .menu-content{
-    margin: 20px auto 0;
+    margin: 20px auto 0 35px;
     text-align: center;
     color: #444;
     width: 100%;
     height: 7%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
-
 
 
 .menu-content-icon{
@@ -92,12 +148,12 @@ article{
 
 .menu-content-icon.active{
     transform: scale(1);
-    margin-right: 5px;
+    margin-right: 15px;
 }
 
 .menu-content-text{
     display: none;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .menu-content-text.active{
@@ -106,11 +162,44 @@ article{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes fadeIn {
     from {
       opacity: 0; /* 투명도 초기값 설정 */
     }
     to {
       opacity: 1; /* 투명도 최종값 설정 */
+    }
+}
+
+@media (max-width: 767px) {
+    #menu-button{
+        display: flex;
+        font-size: 20px;
+    }
+    #search{
+        width: 58%;
+    }
+    header{
+        height: 5%;
+    }
+    #menu-button, #notice{
+        width: 10%;
+    }
+    #menu{
+        top: 70px;
+        margin: 0;
     }
 }
