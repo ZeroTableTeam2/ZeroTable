@@ -9,14 +9,15 @@
 </head>
 <body>
     <header>
-        <div id="logo"><img src="../images/logo-transparent.png"></div>
+        <div id="logo-img"></div>
+        <div id="logo-text"></div>
         <div id="menu-button"></div>
         <div id="search">
-            <div>
-                <input type="text" id="search-box">
-                <button id="reset-button"></button>
+            <form>
                 <button id="search-button" type="button"></button>
-            </div>
+                <input type="text" id="search-box" placeholder="search...">
+                <button id="reset-button" type="reset"></button>
+            </form>
         </div>
         <div id="notice"></div>
         <div id="profile"></div>
@@ -24,27 +25,34 @@
     <main>
         <div id="menu">
             <div class="menu-content">
-                <div class="menu-content-icon">1</div>
-                <p class="menu-content-text">home</p>
+                <div class="menu-content-icon" id="dashboard"><img src="../images/DashBoard.svg"></div>
+                <p class="menu-content-text">Dashboard</p>
             </div>
             <div class="menu-content">
-                <div class="menu-content-icon">2</div>
-                <div class="menu-content-text">service</div>
+                <div class="menu-content-icon" id="recipe"><img src="../images/recipe.svg"></div>
+                <p class="menu-content-text">Recipe</p>
             </div>
             <div class="menu-content">
-                <div class="menu-content-icon">3</div>
-                <div class="menu-content-text">introduce</div>
+                <div class="menu-content-icon" id="myIngredients"><img src="../images/DashBoard.svg"></div>
+                <p class="menu-content-text">My ingredients</p>
             </div>
             <div class="menu-content">
-                <div class="menu-content-icon">4</div>
-                <div class="menu-content-text">question</div>
+                <div class="menu-content-icon" id="comunity"><img src="../images/DashBoard.svg"></div>
+                <p class="menu-content-text">Comunity</p>
             </div>
             <div class="menu-content">
-                <div class="menu-content-icon">5</div>
-                <div class="menu-content-text">dashboard</div>
+                <div class="menu-content-icon" id="customer"><img src="../images/DashBoard.svg"></div>
+                <p class="menu-content-text">Customer</p>
             </div>
+            <div id="setting"></div>
         </div>
-        <article></article>
+        <article>
+            <item id="item1"></item>
+            <item id="item2"></item>
+            <item id="item3"></item>
+            <item id="item4"></item>
+            <item id="item5"></item>
+        </article>
     </main>
 
     <script src="../javaScript/main.js"></script>
