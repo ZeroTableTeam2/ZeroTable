@@ -12,7 +12,7 @@ html{
 body{
     height: 100vh;
     background-color: #e6e6e6;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
 }
 
@@ -154,7 +154,7 @@ header div, header a{
 /*---------본문----------------*/
 main{
     margin-top: 60px;
-    height: 92vh;
+    height: calc(100vh - 60px);
     width: 100vw;
     display: flex;
     justify-content: right;
@@ -162,11 +162,11 @@ main{
 }
 
 #menu{
-    position: absolute;
+    position: fixed;
     left: 0;
     background-color: #ffffff;
     width: 60px;
-    height: 92vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -234,7 +234,7 @@ main{
 article{
     margin-top: 3vh;
     margin-right: 2vh;
-    height: 92vh;
+    height: 100%;
     transition: all 1s;
     display: flex;
     justify-content: center;
