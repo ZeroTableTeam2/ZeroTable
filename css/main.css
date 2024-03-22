@@ -1,5 +1,6 @@
 *{
     font-family: "Roboto", sans-serif;
+    color: #444;
 }
 
 
@@ -56,11 +57,13 @@ header div, header a{
 }
 
 #logo-text{
-    border-left: none;
+    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
+    opacity: 1;
+    transition: width 1s, opacity 1s;
 }
 
 #logo-text img{
@@ -73,7 +76,9 @@ header div, header a{
 }
 
 #menu-button{
-    display: none;
+    display: flex;
+    opacity: 0;
+    width: 0px;
     justify-content: center;
     align-items: center;
     font-size: 40px;
@@ -140,7 +145,7 @@ header div, header a{
     align-items: center;
 }
 
-#notice img, #profile img{
+#notice img, #login img{
     width: 30px;
     height: 30px;
 }
@@ -171,7 +176,7 @@ main{
 }
 
 #menu.active{
-    width: 16vw;
+    width: 220px;
     transition: width 1s;
 }
 
@@ -214,6 +219,7 @@ main{
     transition: all 1s;
     height: 100%;
     width: 100%;
+    text-align: center;
     align-items: center;
     white-space: nowrap;
     overflow: hidden;
@@ -229,12 +235,12 @@ article{
     margin-top: 3vh;
     margin-right: 2vh;
     height: 92vh;
+    transition: all 1s;
     display: flex;
     justify-content: center;
 }
 
 article.active{
-    width: 81vw;
     transition: all 1s;
     display: flex;
     justify-content: center;
@@ -253,7 +259,7 @@ article#home{
 }
 
 article#home.active{
-    width: calc(85% - 60px);
+    width: calc(100% - 260px);
 }
 
 article#home item{
@@ -281,42 +287,76 @@ article#home item{
 
 @keyframes fadeIn {
     from {
-      opacity: 0; /* 투명도 초기값 설정 */
+        opacity: 0;
     }
     to {
-      opacity: 1; /* 투명도 최종값 설정 */
+        opacity: 1;
     }
+}
+
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1279px) {
+
 }
 
 
 @media (max-width: 767px) {
+    #logo-text{
+        width: 0px;
+        transition: width 0.1s;
+        opacity: 0;
+    }
     #menu-button{
-        display: flex;
+        width: 50px;
         font-size: 20px;
+        opacity: 1;
+        animation: fadeIn 0.5s ease forwards;
     }
     #search{
-        width: calc(100% - 350px);
+        width: calc(100% - 180px);
     }
     #menu{
-        display: none;
+        width: 0;
+        opacity: 0;
+        transition: all 1s;
+    }
+    #menu-content-icon img{
+        width:0;
+        transition: all 0.01s;
     }
     #menu.active{
         display: flex;
-        width: 40vw;
+        /* width: 40vw; */
+    }
+
+    article{
+        transition: all 1s;
     }
 
     article#home{
         margin-left: 10px;
-        width: 100%;
+        width: 100vw;
         display: grid;
+        transition: all 1s;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-
         grid-template-areas: 
             "item1"
             "item2"
             "item3"
             "item4"
             "item5";
+    }
+
+    article#home.active{
+        width: 100vw;
     }
 }
