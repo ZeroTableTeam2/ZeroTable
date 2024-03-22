@@ -1,6 +1,6 @@
 *{
     font-family: "Roboto", sans-serif;
-    color: #444;
+    color: #2b2b2b;
 }
 
 
@@ -11,7 +11,8 @@ html{
 
 body{
     height: 100vh;
-    background-color: #e6e6e6;
+    background-image: linear-gradient(to right bottom, #ebe5e3, #ebe3e1, #ebe2df, #ebe0dc, #ebdfda, #e9ddd8, #e7dbd6, #e5d9d4, #e1d6d2, #ddd3d0, #d8d1ce, #d4cecc);
+    /* background-color: #e6e6e6; */
     width: 100vw;
     margin: 0 auto;
 }
@@ -21,7 +22,7 @@ header{
     width: 100vw;
     height: 60px;
     display: flex;
-    background-color: #ffffff;
+    background-color: #d2e2d8;
     box-shadow: 0 4px 4px -4px rgb(126, 126, 126);
     position: fixed;
     top: 0;
@@ -111,7 +112,7 @@ header div, header a{
     width: 100%;
     border: none;
     outline: none;
-    background-color: #ffffff;
+    background-color: #d2e2d8;
     font-size: 15px;
 }
 
@@ -164,7 +165,7 @@ main{
 #menu{
     position: fixed;
     left: 0;
-    background-color: #ffffff;
+    background-color: #d2e2d8;
     width: 60px;
     height: 100%;
     display: flex;
@@ -263,7 +264,7 @@ article#home.active{
 }
 
 article#home item{
-    background-color: #ffffff;
+    background-color: #F3EDEC;
     box-shadow: 0 0 4px 1px rgb(168, 168, 168);
     border-radius: 20px;
 }
@@ -326,15 +327,17 @@ article#home item{
     #menu{
         width: 0;
         opacity: 0;
+        display: none;
         transition: all 1s;
     }
     #menu-content-icon img{
-        width:0;
+        width: 0;
         transition: all 0.01s;
     }
     #menu.active{
         display: flex;
-        /* width: 40vw; */
+        width: 220px;
+        opacity: 1;
     }
 
     article{

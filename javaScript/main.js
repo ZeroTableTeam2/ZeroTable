@@ -37,17 +37,27 @@ menu.addEventListener("mouseout", () => {
 
 menuButton.addEventListener("click", () => {
 
-    if(menuContentText.classList.contains('active')){
+    if(menu.classList.contains('active')){
         menu.classList.remove("active");
         article.classList.remove("active");
         menuContentIcons.forEach(icon => icon.classList.remove("active"));
-        menuContentTexts.forEach(text => text.classList.remove("active"));
+        menuContentTexts.forEach(text => {
+            text.style.animation = "fadeOut 1s ease forwards";
+            text.addEventListener("animationend", function(){
+                if(!menu.classList.contains("active")){
+                    text.style.display = "none";
+                }
+            });
+        });
     }
     else{
         menu.classList.add("active");
         article.classList.add("active");
         menuContentIcons.forEach(icon => icon.classList.add("active"));
-        menuContentTexts.forEach(text => text.classList.add("active"));
+        menuContentTexts.forEach(text => {
+            text.style.display = "flex";
+            text.style.animation = "fadeIn 1s ease forwards";
+        });
     }
 });
 
