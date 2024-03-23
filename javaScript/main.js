@@ -1,6 +1,5 @@
 let menu = document.querySelector('#menu');
 let article = document.querySelector('article');
-let home = document.querySelector('#home');
 let menuButton = document.querySelector('#menu-button');
 let menuContent = document.querySelectorAll('.menu-content');
 let menuContentIcons = document.querySelectorAll('.menu-content-icon');
@@ -13,7 +12,6 @@ let logoText = document.getElementById('logo-text');
 menu.addEventListener("mouseover", () => {
     menu.classList.add("active");
     article.classList.add("active");
-    home.classList.add("active");
     menuContent.forEach(content => content.classList.add("active"));
     menuContentIcons.forEach(icon => icon.classList.add("active"));
     menuContentTexts.forEach(text => {
@@ -25,7 +23,6 @@ menu.addEventListener("mouseover", () => {
 menu.addEventListener("mouseout", () => {
     menu.classList.remove("active");
     article.classList.remove("active");
-    home.classList.remove("active");
     menuContent.forEach(content => content.classList.remove("active"));
     menuContentIcons.forEach(icon => icon.classList.remove("active"));
     menuContentTexts.forEach(text => {

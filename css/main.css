@@ -36,11 +36,11 @@ header div, header a{
 }
 
 #menu-button,
-#notice, 
+#noticeButton, 
 #search, 
 #logo-img, 
 #logo-text, 
-#login{
+#loginButton{
     height: 100%;
 }
 
@@ -72,7 +72,7 @@ header div, header a{
     height: 30px;
 }
 
-#menu-button, #notice, #login{
+#menu-button, #noticeButton, #loginButton{
     width: 50px;
 }
 
@@ -108,6 +108,7 @@ header div, header a{
 }
 
 #search-box{
+    margin-left: 6px;
     height: 80%;
     width: 100%;
     border: none;
@@ -140,13 +141,13 @@ header div, header a{
     background-position: center center;
 }
 
-#notice, #login{
+#noticeButton, #loginButton{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#notice img, #login img{
+#noticeButton img, #loginButton img{
     width: 30px;
     height: 30px;
 }
@@ -243,38 +244,41 @@ main{
     animation: fadeIn 1s ease forwards;
 }
 
-article{
-    margin-top: 3vh;
-    margin-right: 2vh;
+article.commonContent{
+    margin-right: 3vw;
     height: 100%;
     transition: all 1s;
     display: flex;
     justify-content: center;
+    width: calc(100% - 100px);
+    padding: 0;
 }
 
-article.active{
+article.commonContent.active{
     transition: all 1s;
     display: flex;
     justify-content: center;
+    width: calc(100% - 260px);
+    
 }
 
-article#home{
-    width: calc(100% - 100px);
+/*홈페이지*/
+
+#homePage{
+    margin-top: 30px;
+    margin-left: 3vw;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 2%;
+    gap: 17px;
     grid-template-areas: 
         "item1 item1 item2"
         "item3 item4 item2"
         "item3 item4 item5";
 }
 
-article#home.active{
-    width: calc(100% - 260px);
-}
-
-article#home item{
+#homePage item{
     background-color: #F3EDEC;
     box-shadow: 0 0 4px 1px rgb(168, 168, 168);
     border-radius: 20px;
@@ -295,6 +299,8 @@ article#home item{
 #item5{
     grid-area: item5;
 }
+
+
 
 
 @keyframes fadeIn {
@@ -346,24 +352,21 @@ article#home item{
         background: none;
         background-color: #ffffff80;
     }
-/* 
-    .menu-content-icon img{
-        width: 0;
-        transition: all 0.01s;
-    } */
     #menu.active{
         display: flex;
         width: 220px;
         opacity: 1;
     }
 
-    article{
+    article.commonContent{
+        width: 100vw;
         transition: all 1s;
     }
-
-    article#home{
-        margin-left: 10px;
+    article.commonContent.active{
         width: 100vw;
+    }
+
+    #homePage{
         display: grid;
         transition: all 1s;
         grid-template-columns: 1fr;
@@ -374,9 +377,5 @@ article#home item{
             "item3"
             "item4"
             "item5";
-    }
-
-    article#home.active{
-        width: 100vw;
     }
 }
