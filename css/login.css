@@ -4,14 +4,6 @@ button{
     cursor: pointer;
 }
 
-.containerNone{
-    display: none;
-}
-
-.containerActive{
-    display: flex;
-}
-
 #loginPage{
     margin-top: 30px;
     margin-left: 3vw;
@@ -39,7 +31,7 @@ button{
     box-shadow: 0 0 5px 2px rgba(41, 38, 38, 0.527);
 }
 
-#login{
+.login{
     border: 1px solid #000000;
     width: 100%;
     height: calc(100% - 70px);
@@ -48,7 +40,7 @@ button{
     align-items: center;
 }
 
-#login form{
+.login form{
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
@@ -56,7 +48,7 @@ button{
 }
 
 
-#join{
+.join{
     border: 1px solid #000000;
     width: 100%;
     height: calc(100% - 70px);
@@ -65,7 +57,7 @@ button{
     align-items: center;
 }
 
-#join form{
+.join form{
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
@@ -73,7 +65,7 @@ button{
 }
 
 
-#find{
+.find{
     border: 1px solid #000000;
     width: 100%;
     height: calc(100% - 70px);
@@ -82,11 +74,19 @@ button{
     align-items: center;
 }
 
-#find form{
+.find form{
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
     
+}
+
+.containerNone{
+    display: none;
+}
+
+.containerActive{
+    display: flex;
 }
 
 @media (max-width: 1279px) {
