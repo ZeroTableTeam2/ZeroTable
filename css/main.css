@@ -195,6 +195,17 @@ main{
     color: #444;
 }
 
+.menu-content.active{
+    background: linear-gradient(to left, #ffffff80 50%, #d2e2d8 50%);
+    background-size: 200% 100%;
+    position: 0 0;
+    transition: all 1s;
+}
+
+.menu-content.active:hover{
+    background-position: -100% 0;
+}
+
 .menu-content a{
     text-decoration: none;
 }
@@ -330,10 +341,16 @@ article#home item{
         display: none;
         transition: all 1s;
     }
-    #menu-content-icon img{
+
+    .menu-content.mobileMenuTouchActive{
+        background: none;
+        background-color: #ffffff80;
+    }
+/* 
+    .menu-content-icon img{
         width: 0;
         transition: all 0.01s;
-    }
+    } */
     #menu.active{
         display: flex;
         width: 220px;

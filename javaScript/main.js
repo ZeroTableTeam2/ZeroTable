@@ -2,6 +2,7 @@ let menu = document.querySelector('#menu');
 let article = document.querySelector('article');
 let home = document.querySelector('#home');
 let menuButton = document.querySelector('#menu-button');
+let menuContent = document.querySelectorAll('.menu-content');
 let menuContentIcons = document.querySelectorAll('.menu-content-icon');
 let menuContentTexts = document.querySelectorAll('.menu-content-text');
 
@@ -13,6 +14,7 @@ menu.addEventListener("mouseover", () => {
     menu.classList.add("active");
     article.classList.add("active");
     home.classList.add("active");
+    menuContent.forEach(content => content.classList.add("active"));
     menuContentIcons.forEach(icon => icon.classList.add("active"));
     menuContentTexts.forEach(text => {
         text.style.display = "flex";
@@ -24,6 +26,7 @@ menu.addEventListener("mouseout", () => {
     menu.classList.remove("active");
     article.classList.remove("active");
     home.classList.remove("active");
+    menuContent.forEach(content => content.classList.remove("active"));
     menuContentIcons.forEach(icon => icon.classList.remove("active"));
     menuContentTexts.forEach(text => {
         text.style.animation = "fadeOut 1s ease forwards";
@@ -40,6 +43,7 @@ menuButton.addEventListener("click", () => {
     if(menu.classList.contains('active')){
         menu.classList.remove("active");
         article.classList.remove("active");
+        menuContent.forEach(content => content.classList.remove("active"));
         menuContentIcons.forEach(icon => icon.classList.remove("active"));
         menuContentTexts.forEach(text => {
             text.style.animation = "fadeOut 1s ease forwards";
@@ -53,6 +57,7 @@ menuButton.addEventListener("click", () => {
     else{
         menu.classList.add("active");
         article.classList.add("active");
+        menuContent.forEach(content => content.classList.add("active"));
         menuContentIcons.forEach(icon => icon.classList.add("active"));
         menuContentTexts.forEach(text => {
             text.style.display = "flex";
@@ -60,6 +65,15 @@ menuButton.addEventListener("click", () => {
         });
     }
 });
+
+menuContent.addEventListener("click")
+
+function mobileMenuTouch(){
+    if(window.innerWidth <= 767){
+        menuContent.classList.remove("active");
+        menuContent.classList.add("mobileMenuTouchActive");
+    }
+}
 
 
 
