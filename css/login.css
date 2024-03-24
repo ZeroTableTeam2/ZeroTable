@@ -1,5 +1,6 @@
 /*로그인 페이지*/
 
+/*공통*/
 button{
     cursor: pointer;
 }
@@ -31,40 +32,171 @@ button{
     box-shadow: 0 0 5px 2px rgba(41, 38, 38, 0.527);
 }
 
+h1{
+    align-self: flex-start;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 4vw;
+    font-style: italic;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-grow: 1; */
+    /* padding-bottom: 270px; */
+}
+
+form{
+    width: 300px;
+    height: 100px;
+}
+
+form a{
+    margin-top: 10px;
+    float: right;
+    text-decoration: none;
+}
+
+label:not(#checkBoxLabel){
+    margin-left: 5px;
+    background-color: rgba(124, 157, 146, 0.578);
+    font-weight: bold;
+    border-radius: 5px;
+    display: block;
+    width: 70px;
+    text-align: center;
+    padding: 5px
+}
+
+
+/*로그인*/
 .login{
-    border: 1px solid #000000;
     width: 100%;
     height: calc(100% - 70px);
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login form{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000000;
-    
+    flex-direction: column;
 }
 
 
+
+#loginForm{
+    margin-top: 80px;
+}
+
+.loginInputBox{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+#loginEmailBox{
+    margin-bottom:30px;
+}
+
+#checkBoxLabel{
+    position: relative;
+}
+
+#rememberCheckBox, form p, #checkCustom{
+    margin-top: 10px;
+}
+
+#rememberCheckBox{
+    cursor: pointer;
+    opacity: 0;
+}
+
+#rememberCheckBox:checked + #checkCustom{
+    background-image: url("../images/checkBox-checked.svg");
+}
+
+#checkCustom{
+    position: absolute;
+    top: -10;
+    left: 0;
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    background-image: url("../images/checkBox.svg");
+    background-size: cover;
+}
+
+#loginSubmit{
+    display: block;
+    clear: both;
+    margin: 30px auto 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 3px 1px #505050;
+    background-color: rgba(186, 200, 195, 0.578);
+}
+
+
+
+
+/*회원가입*/
 .join{
-    border: 1px solid #000000;
     width: 100%;
     height: calc(100% - 70px);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
-.join form{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #000000;
-    
+h1#joinTitle{
+    align-self: flex-start;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 4vw;
+    font-style: italic;
+}
+
+#joinForm{
+    margin-top: 50px;
+}
+
+.joinInputBox{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+}
+
+#joinNameBox{
+    margin-bottom: 30px;
+}
+
+.joinCheck{
+    margin: 5px 0;
+    text-align: right;
+    font-size: 10px;
+    color: red;
+}
+
+#joinSubmit{
+    display: block;
+    clear: both;
+    margin: 20px auto 0;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 3px 1px #505050;
+    background-color: rgba(186, 200, 195, 0.578);
 }
 
 
+/*계정찾기*/
 .find{
     border: 1px solid #000000;
     width: 100%;
@@ -78,7 +210,6 @@ button{
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
-    
 }
 
 .containerNone{

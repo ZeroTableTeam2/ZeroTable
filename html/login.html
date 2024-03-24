@@ -57,14 +57,39 @@
                     <button id="goToJoinButton" onclick="changeContainer('join')">회원가입</button>
                 </div>
                 <div class="login container containerActive">
-                    <form>
-                        로그인
-                    </form>
+                    <h1 id="loginTitle">Login</h1>
+                    <div class="form-container" id="loginForm">
+                        <form>
+                            <label>이메일</label>
+                            <input class="loginInputBox" id="loginEmailBox" type="text">
+                            <label>패스워드</label>
+                            <input class="loginInputBox" id="loginPasswordBox" type="text">
+                            <label id="checkBoxLabel">
+                                <input id="rememberCheckBox" type="checkbox">
+                                <img id="checkCustom">
+                            </label>
+                            <span>아이디 저장</span><a href="#">비밀번호 찾기</a>
+                            <button id="loginSubmit">로그인</button>
+                        </form>
+                    </div>
                 </div>
                 <div class="join container containerNone">
-                    <form>
-                        회원가입
-                    </form>
+                    <h1 id="joinTitle">Join</h1>
+                    <div class="form-container" id="joinForm">
+                        <form>
+                            <label>이름</label>
+                            <input class="joinInputBox" id="joinNameBox" type="text">
+                            <label>이메일</label>
+                            <input class="joinInputBox" id="joinEmailBox" type="text">
+                            <p class="joinCheck">중복 메시지</p>
+                            <label>패스워드</label>
+                            <input class="joinInputBox" id="joinPasswordBox" type="text">
+                            <input class="joinInputBox" id="joinPasswordCheckBox" type="text">
+                            <p class="joinCheck">불일치 메시지</p>
+                            <button id="joinSubmit">가입</button>
+                        </form>
+                    </div>
+                    
                 </div>
                 <div class="find container containerNone">
                     <form>
