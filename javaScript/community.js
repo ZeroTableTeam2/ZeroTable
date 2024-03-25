@@ -1,7 +1,4 @@
-let goToFindButton = document.getElementById('goToFindButton');
-
-function changeContainer(event, classId){
-    event.preventDefault();
+function changeContainer(classId){
     let containers = document.querySelectorAll('.container');
     containers.forEach(container => container.classList.remove("containerActive"));
     containers.forEach(container => container.classList.remove("containerNone"));
@@ -15,5 +12,3 @@ function changeContainer(event, classId){
         }
     }
 }
-
-goToFindButton.addEventListener('click', event => changeContainer(event, 'find'));

@@ -30,7 +30,7 @@
         <div id="menu">
             <div class="menu-content">
                 <div class="menu-content-icon" id="dashboard"><img src="../images/DashBoard.svg"></div>
-                <p class="menu-content-text"><a href="#">Dashboard</a></p>
+                <p class="menu-content-text"><a href="../html/index.html">Dashboard</a></p>
             </div>
             <div class="menu-content">
                 <div class="menu-content-icon" id="recipe"><img src="../images/recipe.svg"></div>
@@ -53,11 +53,11 @@
         <article class="commonContent">
             <div id="loginPage">
                 <div id="loginPageSelect">
-                    <button id="goToLoginButton" onclick="changeContainer('login')">로그인</button>
-                    <button id="goToJoinButton" onclick="changeContainer('join')">회원가입</button>
+                    <button id="goToLoginButton" onclick="changeContainer(event, 'login')">로그인</button>
+                    <button id="goToJoinButton" onclick="changeContainer(event, 'join')">회원가입</button>
                 </div>
                 <div class="login container containerActive">
-                    <h1 id="loginTitle">Login</h1>
+                    <h1 id="loginTitle">로그인</h1>
                     <div class="form-container" id="loginForm">
                         <form>
                             <label>이메일</label>
@@ -68,13 +68,13 @@
                                 <input id="rememberCheckBox" type="checkbox">
                                 <img id="checkCustom">
                             </label>
-                            <span>아이디 저장</span><a href="#">비밀번호 찾기</a>
+                            <span>아이디 저장</span><a id="goToFindButton" href="#">비밀번호 찾기</a>
                             <button id="loginSubmit">로그인</button>
                         </form>
                     </div>
                 </div>
                 <div class="join container containerNone">
-                    <h1 id="joinTitle">Join</h1>
+                    <h1 id="joinTitle">회원가입</h1>
                     <div class="form-container" id="joinForm">
                         <form>
                             <label>이름</label>
@@ -92,9 +92,14 @@
                     
                 </div>
                 <div class="find container containerNone">
-                    <form>
-                        계정찾기
-                    </form>
+                    <h1 id="findTitle">비밀번호 찾기</h1>
+                    <div class="form-container" id="findForm">
+                        <form>
+                            <label>이메일</label>
+                            <input class="findInputBox" id="findEmailBox" type="text">
+                            <button id="findSubmit">찾기</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </article>

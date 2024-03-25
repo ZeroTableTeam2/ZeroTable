@@ -1,0 +1,77 @@
+button{
+    cursor: pointer;
+}
+
+#customerPage{
+    margin-top: 30px;
+    margin-left: 3vw;
+    width: 100%;
+    height: 100%;
+    background-color: #F3EDEC;
+    box-shadow: 0 0 4px 1px rgb(168, 168, 168);
+    border-radius: 20px;
+}
+
+#customerPageSelect{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#goToIntroduceButton, #goToHowButton, #goToQuestionButton{
+    font-weight: bold;
+    margin-left: 20px;
+    height: 5vh;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(124, 157, 146, 0.578);
+    box-shadow: 0 0 5px 2px rgba(41, 38, 38, 0.527);
+}
+
+h1{
+    margin: 0 auto;
+    align-self: flex-start;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: 4vw;
+    font-style: italic;
+}
+
+.customer-container{
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    width: 90%;
+    height: 100%;
+    align-self: center;
+}
+
+.container{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*소개*/
+
+
+
+/*사용법*/
+
+
+/*1:1문의*/
+
+
+
+
+.containerNone{
+    display: none;
+}
+
+.containerActive{
+    display: flex;
+}

@@ -152,6 +152,12 @@ header div, header a{
     height: 30px;
 }
 
+/* #noticeBox{
+    overflow: hidden;
+    position: absolute;
+    top: ;
+} */
+
 
 /*---------본문----------------*/
 main{
@@ -285,19 +291,19 @@ article.commonContent.active{
     border-radius: 20px;
 }
 
-#item1{
+#homeitem1{
     grid-area: item1;
 }
-#item2{
+#homeitem2{
     grid-area: item2;
 }
-#item3{
+#homeitem3{
     grid-area: item3;
 }
-#item4{
+#homeitem4{
     grid-area: item4;
 }
-#item5{
+#homeitem5{
     grid-area: item5;
 }
 

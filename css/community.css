@@ -1,0 +1,70 @@
+button{
+    cursor: pointer;
+}
+
+#communityPage{
+    margin-top: 30px;
+    margin-left: 3vw;
+    width: 100%;
+    height: 100%;
+    background-color: #F3EDEC;
+    box-shadow: 0 0 4px 1px rgb(168, 168, 168);
+    border-radius: 20px;
+}
+
+#communityPageSelect{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#goToAnnounceButton, #goToFreeButton, #goToShareButton{
+    font-weight: bold;
+    margin-left: 20px;
+    height: 5vh;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(124, 157, 146, 0.578);
+    box-shadow: 0 0 5px 2px rgba(41, 38, 38, 0.527);
+}
+
+#goToShareButton{
+    width: 150px;
+}
+
+#boardList, #boardDetail{
+    width: 100%;
+    height: 100%;
+}
+
+.communityBoard{
+    margin: 20px auto 0;
+    width: 90%;
+    height: calc(100% - 70px);
+    /* display: flex;
+    flex-direction: column; */
+    border: 1px solid #000000;
+}
+
+
+#boardDetail{
+    display: none;
+}
+
+#boardList{
+    display: flex;
+}
+
+.containerNone{
+    display: none;
+}
+
+.containerActive{
+    display: flex;
+}
+
+#write{
+    display: none;
+}

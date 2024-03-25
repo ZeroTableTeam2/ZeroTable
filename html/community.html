@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/community.css" rel="stylesheet">
     <title>Zero Waste - home</title>
 </head>
 <body>
@@ -40,7 +41,7 @@
             </div>
             <div class="menu-content">
                 <div class="menu-content-icon" id="myIngredients"><img src="../images/ingredients.svg"></div>
-                <p class="menu-content-text"><a href="#">My ingredients</a></p>
+                <p class="menu-content-text"><a hr공지사항ef="#">My ingredients</a></p>
             </div>
             <div class="menu-content">
                 <div class="menu-content-icon" id="comunity"><img src="../images/community.svg"></div>
@@ -53,20 +54,60 @@
             <div id="setting"></div>
         </div>
         <article class="commonContent">
-            <div id="homePage">
-                <item id="homeitem1"></item>
-                <item id="homeitem2"></item>
-                <item id="homeitem3"></item>
-                <item id="homeitem4"></item>
-                <item id="homeitem5"></item>
+            <div id="communityPage">
+                <div id="communityPageSelect">
+                    <button id="goToAnnounceButton" onclick="changeContainer('announce')">공지사항</button>
+                    <button id="goToFreeButton" onclick="changeContainer('free')">자유게시판</button>
+                    <button id="goToShareButton" onclick="changeContainer('share')">레시피 공유 게시판</button>
+                </div>
+                <div id="boardList">
+                    <div class="announce container containerActive">
+                        <div class="communityBoard" id="announceList">
+                            aaaaa
+                        </div>
+                    </div>
+                    <div class="free container containerNone">
+                        <div class="communityBoard" id="freeList">
+                            bbbbb
+                        </div>
+                        
+                    </div>
+                    <div class="share container containerNone">
+                        <div class="communityBoard" id="shareList">
+                            vvvv
+                        </div>
+                    </div>
+
+                    <input type="text">
+                </div>
+                
+                <div id="boardDetail">
+                    <div class="announce container containerActive">
+                        <div class="communityBoard" id="announceDetail">
+                            
+                        </div>
+                    </div>
+                    <div class="free container containerNone">
+                        <div class="communityBoard" id="freeDetail">
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="share container containerNone">
+                        <div class="communityBoard" id="shareDetail">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="write">
+                    <div id="writeContainer">
+                    </div>
+                </div>
             </div>
         </article>
     </main>
 
     <script src="../javaScript/main.js"></script>
+    <script src="../javaScript/community.js"></script>
 </body>
 </html>
-
-
-
-
