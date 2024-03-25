@@ -25,6 +25,7 @@ button{
 #goToLoginButton, #goToJoinButton{
     font-weight: bold;
     margin-left: 20px;
+    margin-top: 20px;
     height: 5vh;
     width: 100px;
     border-radius: 20px;
@@ -68,13 +69,17 @@ label:not(#checkBoxLabel){
     padding: 5px
 }
 
-
-/*로그인*/
-.login{
+.container{
     width: 100%;
     height: calc(100% - 70px);
     display: flex;
     flex-direction: column;
+}
+
+
+/*로그인*/
+#login{
+    display: flex;
 }
 
 #loginForm{
@@ -139,11 +144,8 @@ label:not(#checkBoxLabel){
 
 
 /*회원가입*/
-.join{
-    width: 100%;
-    height: calc(100% - 70px);
-    display: flex;
-    flex-direction: column;
+#join{
+    display: none;
 }
 
 #joinForm{
@@ -185,11 +187,9 @@ label:not(#checkBoxLabel){
 
 
 /*계정찾기*/
-.find{
-    width: 100%;
-    height: calc(100% - 70px);
-    display: flex;
-    flex-direction: column;
+
+#find{
+    display: none;
 }
 
 #findForm{
@@ -215,14 +215,6 @@ label:not(#checkBoxLabel){
     border: none;
     box-shadow: 0 0 3px 1px #505050;
     background-color: rgba(186, 200, 195, 0.578);
-}
-
-.containerNone{
-    display: none;
-}
-
-.containerActive{
-    display: flex;
 }
 
 @media (max-width: 1279px) {

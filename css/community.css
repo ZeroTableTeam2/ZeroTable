@@ -22,8 +22,8 @@ button{
 #goToAnnounceButton, #goToFreeButton, #goToShareButton{
     font-weight: bold;
     margin-left: 20px;
+    margin-top: 20px;
     height: 5vh;
-    width: 100px;
     border-radius: 20px;
     border: none;
     background-color: rgba(124, 157, 146, 0.578);
@@ -31,7 +31,15 @@ button{
 }
 
 #goToShareButton{
-    width: 150px;
+    width: 130px;
+}
+
+#goToAnnounceButton{
+    width: 80px;
+}
+
+#goToFreeButton{
+    width: 90px;
 }
 
 #boardList, #boardDetail{
@@ -39,14 +47,113 @@ button{
     height: 100%;
 }
 
+.container{
+    width: 100%;
+    height: 50%;
+}
+
 .communityBoard{
+    padding: 20px;
     margin: 20px auto 0;
     width: 90%;
     height: calc(100% - 70px);
-    /* display: flex;
-    flex-direction: column; */
-    border: 1px solid #000000;
 }
+
+
+/*공지사항*/
+
+#announce{
+    display: flex;
+}
+
+#announceList{
+    border-radius: 10px;
+    background-color: rgba(213, 213, 213, 0.503);
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#announceList span:nth-child(1){
+    margin-left: 200px;
+}
+
+#writeButton{
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(186, 200, 195, 0.578);
+    border: none;
+    border-radius: 7px;
+    float: right;
+    display: none;
+}
+
+
+
+/*자유게시판*/
+
+#free{
+    display: none;
+}
+
+#freeList{
+    border-radius: 10px;
+    background-color: rgba(213, 213, 213, 0.503);
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#freeList span:nth-child(1){
+    margin-left: 200px;
+}
+
+#freeList span:nth-child(2){
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+/*레시피 공유 게시판*/
+
+#share{
+    display: none;
+}
+
+#shareList{
+    border-radius: 10px;
+    background-color: rgba(213, 213, 213, 0.503);
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#shareList span:nth-child(1){
+    margin-left: 200px;
+}
+
+#shareList span:nth-child(2){
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+
+
+
 
 
 #boardDetail{
@@ -57,14 +164,44 @@ button{
     display: flex;
 }
 
-.containerNone{
-    display: none;
-}
-
-.containerActive{
-    display: flex;
-}
-
 #write{
     display: none;
+}
+
+@media (max-width: 1279px){
+    #announceList span:nth-child(1){
+        margin-left: 100px;
+    }
+
+    #freeList span:nth-child(1){
+        margin-left: 100px;
+    }
+
+    #shareList span:nth-child(1){
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 767px){
+    #announceList span:nth-child(1){
+        margin-left: 50px;
+    }
+
+    #freeList span:nth-child(1){
+        margin-left: 50px;
+    }
+
+    #shareList span:nth-child(1){
+        margin-left: 50px;
+    }
+
+    #communityPageSelect{
+        padding-left: 0;
+    }
+
+    #goToAnnounceButton, #goToFreeButton, #goToShareButton{
+        margin-left: 10px;
+    }
+
+
 }
