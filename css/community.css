@@ -82,7 +82,7 @@ button{
     margin-left: 200px;
 }
 
-#writeButton{
+#announceWriteButton{
     margin-top: 20px;
     padding: 5px 15px;
     font-size: 15px;
@@ -123,6 +123,17 @@ button{
     margin-right: 30px;
 }
 
+#freeWriteButton{
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(186, 200, 195, 0.578);
+    border: none;
+    border-radius: 7px;
+    float: right;
+}
+
 
 /*레시피 공유 게시판*/
 
@@ -149,6 +160,17 @@ button{
 #shareList span:nth-child(2){
     margin-left: auto;
     margin-right: 30px;
+}
+
+#shareWriteButton{
+    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(186, 200, 195, 0.578);
+    border: none;
+    border-radius: 7px;
+    float: right;
 }
 
 
@@ -183,20 +205,16 @@ button{
 }
 
 @media (max-width: 767px){
-    #announceList span:nth-child(1){
-        margin-left: 50px;
-    }
-
-    #freeList span:nth-child(1){
-        margin-left: 50px;
-    }
-
+    #announceList span:nth-child(1),
+    #freeList span:nth-child(1),
     #shareList span:nth-child(1){
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     #communityPageSelect{
         padding-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #goToAnnounceButton, #goToFreeButton, #goToShareButton{

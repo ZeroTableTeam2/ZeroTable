@@ -77,11 +77,14 @@ h1{
 }
 
 
+@media (max-width: 767px){
+    #customerPageSelect{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.containerNone{
-    display: none;
-}
-
-.containerActive{
-    display: flex;
+    #goToIntroduceButton, #goToHowButton, #goToQuestionButton{
+        width: 70px;
+    }
 }
