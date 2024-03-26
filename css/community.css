@@ -42,6 +42,13 @@ button{
     width: 90px;
 }
 
+#goToShareButton:hover,
+#goToAnnounceButton:hover,
+#goToFreeButton:hover{
+    scale: 1.1;
+    transition: all 1s;
+}
+
 #boardList, #boardDetail{
     width: 100%;
     height: 100%;

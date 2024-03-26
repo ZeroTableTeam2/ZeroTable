@@ -16,7 +16,7 @@ button{
     height: 70px;
     display: flex;
     justify-content: space-evenly;
-    
+    padding-top: 30px;
 }
 
 #searchAndButton form{
@@ -69,3 +69,17 @@ button{
     background-repeat: no-repeat;
     background-image: url("../images/plus.svg");
 }
+
+#ingredientsLists{
+    margin: 20px auto;
+    width: 90%;
+    height: 70%;
+    border: 1px solid #000000;
+    overflow: auto;
+}
+
+#ingredientsLists div{
+    
+    background-color: gray;
+}
+

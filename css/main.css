@@ -152,11 +152,15 @@ header div, header a{
     height: 30px;
 }
 
-/* #noticeBox{
-    overflow: hidden;
-    position: absolute;
-    top: ;
-} */
+#logo-img img:hover, 
+#logo-text img:hover, 
+#noticeButton img:hover, 
+#loginButton img:hover,
+#search-button:hover,
+#reset-button:hover{
+    scale: 1.1;
+    transition: all 1s;
+}
 
 
 /*---------본문----------------*/
