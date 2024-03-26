@@ -23,7 +23,7 @@ button{
     font-weight: bold;
     margin-left: 20px;
     margin-top: 20px;
-    height: 5vh;
+    height: 40px;
     width: 100px;
     border-radius: 20px;
     border: none;
@@ -34,19 +34,26 @@ button{
 h1{
     margin: 0 auto;
     align-self: flex-start;
-    font-size: 50px;
+    font-size: 35px;
     margin-top: 30px;
     margin-left: 4vw;
-    font-style: italic;
+    font-weight: bold;
+}
+
+p{
+    color: rgb(104, 104, 104);
+    font-size: 15px;
 }
 
 .customer-container{
+    font-family: "맑은 고딕";
     border-radius: 10px;
-    border: 1px solid #000000;
     margin-top: 10px;
     width: 90%;
     height: 100%;
     align-self: center;
+    line-height: 30px;
+    overflow: auto;
 }
 
 .container{
@@ -61,6 +68,11 @@ h1{
 
 #introduce{
     display: flex;
+    margin: 0 auto;
+}
+
+#introduceInner{
+    margin: 20px auto;
 }
 
 
@@ -70,12 +82,26 @@ h1{
     display: none;
 }
 
+#howInner{
+    margin: 20px auto;
+}
+
 /*1:1문의*/
 
 #question{
     display: none;
 }
 
+#questionInner h1{
+    margin: 20px auto;
+    align-self: auto;
+    font-weight: bold; 
+    line-height: 40px;
+}
+
+#questionInner p{
+    padding-top: 40px;
+}
 
 @media (max-width: 767px){
     #customerPageSelect{
@@ -86,5 +112,9 @@ h1{
 
     #goToIntroduceButton, #goToHowButton, #goToQuestionButton{
         width: 70px;
+    }
+
+    #questionInner p{
+        padding-top: 0;
     }
 }

@@ -2,7 +2,7 @@ button{
     cursor: pointer;
 }
 
-#recipePage{
+#ingredientsPage{
     margin-top: 30px;
     margin-left: 3vw;
     width: 100%;
@@ -12,15 +12,14 @@ button{
     border-radius: 20px;
 }
 
-#recipeSearch{
+#searchAndButton{
     height: 70px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     
 }
 
-#recipeSearch form{
+#searchAndButton form{
     height: 60%;
     width: 60%;
     background-color: rgba(124, 157, 146, 0.578);
@@ -30,7 +29,7 @@ button{
     align-items: center;
 }
 
-#recipe-search-button{
+#food-search-button{
     margin-left: 10px;
     width: 3%;
     background: none;
@@ -42,14 +41,14 @@ button{
     background-position: center;
 }
 
-#recipe-search-box{
+#food-search-box{
     width: 85%;
     background-color: rgba(124, 157, 146, 0);
     outline: none;
     border: none;
 }
 
-#recipe-reset-button{
+#food-reset-button{
     margin-right: 10px;
     background: none;
     border: none;
@@ -61,9 +60,12 @@ button{
     background-image: url("../images/resetBtn.svg");
 }
 
-
-@media (max-width:  767px){
-    #recipeSearch form{
-        width: 80%;
-    }
+#foodInputButton{
+    box-shadow: 0 0 4px 4px gray;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-image: url("../images/plus.svg");
 }
