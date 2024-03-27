@@ -22,7 +22,8 @@ button{
 #searchAndButton form{
     height: 60%;
     width: 60%;
-    background-color: rgba(124, 157, 146, 0.578);
+
+    box-shadow: 0 0 4px 4px rgba(128, 128, 128, 0.514);
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,7 @@ button{
 
 #food-search-box{
     width: 85%;
-    background-color: rgba(124, 157, 146, 0);
+    background-color: rgba(255, 255, 255, 0);
     outline: none;
     border: none;
 }
@@ -73,17 +74,68 @@ button{
 #ingredientsLists{
     margin: 20px auto;
     width: 90%;
-    height: 70%;
-    border: 1px solid #000000;
     overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0 0 0 15px;
+    align-items: flex-start;
+
 }
 
 .eachIngredient{
-    border: 1px solid #000000;
-    width: 33%;
-    height: 50px;
+    box-shadow: 0 0 4px 2px rgba(128, 128, 128, 0.56);
+    background-color: #F3EDEC;
+    width: 31%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto 20px;
+    margin-right: calc((100% - 3 * 31%) / 4);
+    margin-left: 0;
+    transition: height 0.5s ease-out;
 }
 
+.eachIngredient p{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ingredientDetails{
+    display: none;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    margin-bottom: 10px;
+}
+
+.ingredientDetails hr{
+    background-color: rgba(128, 128, 128, 0.54);
+    margin: 0 10% 10px ;
+}
+
+.ingredientDetails li{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.eachIngredient.active{
+    height: 200px;
+    z-index: 10;
+}
+
+.eachIngredient.active .ingredientDetails{
+    display: block;
+    max-height: 2000px;
+}
+
+
+@media (max-width: 767px){
+    .eachIngredient{
+        width: 46%;
+        margin-right: calc((100% - 2 * 46%) / 3);
+    }
+}
