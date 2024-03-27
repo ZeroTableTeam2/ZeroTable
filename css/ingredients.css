@@ -76,10 +76,14 @@ button{
     height: 70%;
     border: 1px solid #000000;
     overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#ingredientsLists div{
-    
-    background-color: gray;
+.eachIngredient{
+    border: 1px solid #000000;
+    width: 33%;
+    height: 50px;
 }
 
