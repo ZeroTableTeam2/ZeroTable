@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    height: 100vh;
+    height: calc(100vh - 30px);
     background-image: linear-gradient(to right bottom, #ebe5e3, #ebe3e1, #ebe2df, #ebe0dc, #ebdfda, #e9ddd8, #e7dbd6, #e5d9d4, #e1d6d2, #ddd3d0, #d8d1ce, #d4cecc);
     /* background-color: #e6e6e6; */
     width: 100vw;

@@ -1,4 +1,6 @@
 let isSmallScreen = window.matchMedia('(max-width: 767px)').matches;
+let eachIngredients = document.querySelectorAll('.eachIngredient');
+let ingredientDetails = document.querySelectorAll('.ingredientDetails');
 
 function addClickListener() {
     let ingredients = document.querySelectorAll('.eachIngredient');
@@ -21,23 +23,35 @@ function clickHandler() {
         let detailsHeight = details.scrollHeight;
         details.style.maxHeight = detailsHeight + "px";
         details.style.display = "block";
-        this.style.height = detailsHeight + 60 + "px";
+        this.style.height = detailsHeight + 80 + "px";
     } else {
         details.style.maxHeight = "0px";
-        this.style.height = "50px";
+        this.style.height = "80px";
     }
     this.classList.toggle('active');
 }
 
+
 function handleResize() {
-    let newIsSmallScreen = window.matchMedia('(max-width: 767px)').matches;
-    if (newIsSmallScreen !== isSmallScreen) {
-        isSmallScreen = newIsSmallScreen;
-        if (isSmallScreen) {
-            addClickListener();
-        } else {
-            removeClickListener(); // 큰 화면일 때 이벤트 리스너 제거
-        }
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        addClickListener();
+        ingredientDetails.forEach(function(ingredientDetail){
+            ingredientDetail.style.display = "none";
+        });
+        eachIngredients.forEach(function(eachIngredient){
+            eachIngredient.style.height = "80px";
+        });
+        
+
+    }
+    else {
+        removeClickListener();
+        ingredientDetails.forEach(function(ingredientDetail){
+            ingredientDetail.style.display = "flex";
+        });
+        eachIngredients.forEach(function(eachIngredient){
+            eachIngredient.style.height = "50px";
+        })
     }
 }
 
