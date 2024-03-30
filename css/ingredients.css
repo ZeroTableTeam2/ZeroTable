@@ -20,7 +20,85 @@ button{
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
+    position: relative;
 }
+
+#inputBox{
+    position: absolute;
+    top: 110px;
+    right: 11%;
+    border: 2px solid #91acbb;
+    box-shadow: 0 0 4px 1px #4e7084;
+    background-color: #F3EDEC;
+    width: 250px;
+    height: 0;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 10px;
+    z-index: 49;
+    overflow: hidden;
+}
+
+#inputBox li{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputBox hr{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#inputBox input{
+    height: 20px;
+    border-radius: 5px;
+}
+
+#inputBox select{
+    border-radius: 5px;
+    height: 20px;
+    border-width: 2px;
+    width: 100px;
+    appearance: none;
+}
+
+#inputBox button{
+    border: none;
+    background-color: #F3EDEC;
+    width: 70%;
+    height: 60%;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#inputBox.addBox{
+    height: 250px;
+    opacity: 1;
+    transition: all 1s;
+}
+
+/* #searchAndButton::after{
+    content: "";
+    height: 0;
+    width: 250px;
+    border: 2px solid #91acbb;
+    background-color: #F3EDEC;
+    box-shadow: 0 0 4px 1px #4e7084;
+    position: absolute;
+    top: 110px;
+    right: 11%;
+    transition: all 1s;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+#searchAndButton.addBox::after{
+    height: 250px;
+    opacity: 1;
+    transition: all 1s;
+} */
 
 #searchAndButton form{
     height: 60%;
@@ -72,7 +150,15 @@ button{
     height: 60px;
     background-repeat: no-repeat;
     background-image: url("../images/plus.svg");
+    transition: transform 1s;
+    z-index: 100;
+    position: relative;
 }
+
+#foodInputButton.buttonClick{
+    transform: rotate(45deg);
+}
+
 
 #ingredientsLists{
     margin: 20px auto;
@@ -289,12 +375,6 @@ button{
     .ingredientDetails li:nth-child(6){
         margin-left: 0;
     }
-    
-    .ingredientDetails li:nth-child(8){
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
 
     .ingredientDetails label{
         display: inline-block;
@@ -304,10 +384,6 @@ button{
 
         border: 1px solid rgb(211, 211, 211);
         margin: 0 15% 10px;
-    }
-    
-    .eachIngredient.active{
-        height: 100px;
     }
     
     .eachIngredient.active .ingredientDetails{

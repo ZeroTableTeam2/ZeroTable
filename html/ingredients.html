@@ -62,6 +62,40 @@
                         <button id="food-reset-button" type="reset"></button>
                     </form>
                     <button id="foodInputButton"></button>
+
+                    <div id="inputBox">
+                        <ul>
+                            <li>
+                                <label>재료명 :&nbsp;</label>
+                                <input type="text" placeholder="재료명">
+                            </li>
+                            <hr>
+                            <li>
+                                <label>수량 :&nbsp;</label>
+                                <input type="number" value="1" pattern="\d">
+                            </li>
+                            <hr>
+                            <li>
+                                <label>분류 :&nbsp;</label>
+                                <select>
+                                    <option value="fruit">과일</option>
+                                    <option value="vegetable">채소/야채</option>
+                                    <option value="meat">육류</option>
+                                    <option value="seafood">해산물</option>
+                                    <option value="etc">기타</option>
+                                </select>
+                            </li>
+                            <hr>
+                            <li>
+                                <label>유통기한 :&nbsp;</label>
+                                <input type="date" max="2040-12-31" min="2000-01-01">
+                            </li>
+                            <hr>
+                            <li>
+                                <button onclick="">등록</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div id="ingredientsLists">

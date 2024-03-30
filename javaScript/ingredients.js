@@ -19,16 +19,19 @@ function removeClickListener() {
 function clickHandler() {
     let details = this.querySelector('.ingredientDetails');
 
-    if (this.classList.contains('active')) {
-        let detailsHeight = details.scrollHeight;
-        details.style.maxHeight = detailsHeight + "px";
+    if (!this.classList.contains('active')) {
+        this.classList.add('active');
         details.style.display = "block";
-        this.style.height = detailsHeight + 80 + "px";
+        setTimeout(() => {
+            let detailsHeight = details.scrollHeight;
+            details.style.maxHeight = detailsHeight + "px";
+            this.style.height = detailsHeight + 80 + "px";
+        }, 10);
     } else {
+        this.classList.remove('active');
         details.style.maxHeight = "0px";
         this.style.height = "80px";
     }
-    this.classList.toggle('active');
 }
 
 
@@ -62,3 +65,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 window.addEventListener('resize', handleResize);
+
+
+
+let foodInputButton = document.getElementById('foodInputButton');
+let inputBox = document.getElementById('inputBox');
+
+foodInputButton.addEventListener('click', function(){
+    if(foodInputButton.classList.toggle('buttonClick')) inputBox.classList.add('addBox');
+    else inputBox.classList.remove('addBox');
+});
+
+
+document.querySelector('#inputBox ul li:nth-child(7) input').value = new Date().toISOString().substring(0, 10);
