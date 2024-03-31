@@ -92,7 +92,7 @@
                             </li>
                             <hr>
                             <li>
-                                <button onclick="">등록</button>
+                                <button id="addButton" onclick=""><img src="../images/addIngredient.svg"></button>
                             </li>
                         </ul>
                     </div>
@@ -107,16 +107,43 @@
                         <div></div>
                     </div>
                     <div class="eachIngredient">
-                        <p>샘플</p>
+                        <p class="ingredientName">샘플</p>
                         <hr>
-                        <p><label>수량:&nbsp;</label> 1개</p>
+                        <p>
+                            <label>수량:&nbsp;</label>
+                            <span class="ingredientText">2개</span>
+                            <span class="ingredientSetting"><input type="number"></span>
+                        </p>
                         <ul class="ingredientDetails">
                             <hr>
-                            <li><label>분류:&nbsp;</label> 과일</li>
+                            <li>
+                                <label>분류:&nbsp;</label>
+                                <span class="ingredientText">기타</span>
+                                <span class="ingredientSetting">
+                                    <select>
+                                        <option name="category" value="fruit">과일</option>
+                                        <option name="category" value="vegetable">채소/야채</option>
+                                        <option name="category" value="meat">육류</option>
+                                        <option name="category" value="seafood">해산물</option>
+                                        <option name="category" value="etc">기타</option>
+                                    </select>
+                                </span>   
+                            </li>
                             <hr>
-                            <li><label>유통기한:&nbsp;</label> 2024-12-14</li>
+                            <li>
+                                <label>유통기한:&nbsp;</label> 
+                                <span class="ingredientText">2024-12-14</span>
+                                <span class="ingredientSetting"><input type="date"></span>
+                            </li>
                             <hr>
-                            <li><img src="../images/menu-dots.svg"></li>
+                            <li>
+                                <img src="../images/menu-dots.svg" class="updateDeleteButton">
+                                <div>
+                                    <img src="../images/updateIngredient.svg" class="updateButton">
+                                    <img src="../images/deleteIngredient.svg" class="deleteButton">
+                                </div>
+                                <img src="../images/okButton.svg" class="okButton">
+                            </li>
                         </ul>
                     </div>
                     <div class="eachIngredient"></div>

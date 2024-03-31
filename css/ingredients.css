@@ -54,6 +54,8 @@ button{
 #inputBox input{
     height: 20px;
     border-radius: 5px;
+    background-color: #c7dce86b;
+    border-color: #c7dce86b;
 }
 
 #inputBox select{
@@ -62,6 +64,8 @@ button{
     border-width: 2px;
     width: 100px;
     appearance: none;
+    background-color: #c7dce86b;
+    border-color: #c7dce86b;
 }
 
 #inputBox button{
@@ -73,32 +77,16 @@ button{
     margin-bottom: 10px;
 }
 
+#inputBox button img{
+    height: 25px;
+}
+
 #inputBox.addBox{
     height: 250px;
     opacity: 1;
     transition: all 1s;
 }
 
-/* #searchAndButton::after{
-    content: "";
-    height: 0;
-    width: 250px;
-    border: 2px solid #91acbb;
-    background-color: #F3EDEC;
-    box-shadow: 0 0 4px 1px #4e7084;
-    position: absolute;
-    top: 110px;
-    right: 11%;
-    transition: all 1s;
-    border-radius: 10px;
-    opacity: 0;
-}
-
-#searchAndButton.addBox::after{
-    height: 250px;
-    opacity: 1;
-    transition: all 1s;
-} */
 
 #searchAndButton form{
     height: 60%;
@@ -273,6 +261,26 @@ button{
     justify-content: center;
 }
 
+.ingredientSetting{
+    display: none;
+}
+
+.ingredientSetting input,
+.ingredientSetting select{
+    height: 20px;
+    border-radius: 5px;
+    background-color: #e1e7ea6b;
+    border-color: #d4dee46b;
+}
+
+.ingredientText.hideInput{
+    display: none;
+}
+
+.ingredientSetting.showInput{
+    display: block;
+}
+
 .ingredientDetails li:nth-child(4){
     margin-left: 20%;
 }
@@ -281,10 +289,46 @@ button{
     margin-left: 35%;
 }
 
-.ingredientDetails li:nth-child(6) img{
-    width: 20px;
+.updateDeleteButton{
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px #4e7084;
+    width: 30px;
     cursor: pointer;
+    transition: all 1s;
 }
+
+.updateDeleteButton.buttonClick{
+    display: none;
+}
+
+.updateButton, .deleteButton, .okButton{
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 1px #4e7084;
+    cursor: pointer;
+    width: 30px;
+}
+
+.okButton{
+    display: none;
+    margin: 0 auto;
+}
+
+.okButton.showButton{
+    display: block;
+}
+
+.ingredientDetails li:nth-child(6) div{
+    display: none;
+}
+
+.ingredientDetails li:nth-child(6) div.showButton{
+    display: block;
+}
+
 
 .ingredientDetails hr{
     display: none;
@@ -386,8 +430,14 @@ button{
         margin: 0 15% 10px;
     }
     
-    .eachIngredient.active .ingredientDetails{
+    .eachIngredient.detail .ingredientDetails{
         display: flex;
         max-height: 2000px;
+    }
+
+    .ingredientSetting input{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
     }
 }

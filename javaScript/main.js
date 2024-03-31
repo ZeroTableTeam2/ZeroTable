@@ -63,7 +63,7 @@ menuButton.addEventListener("click", () => {
     }
 });
 
-menuContent.addEventListener("click")
+// menuContent.addEventListener("click")
 
 function mobileMenuTouch(){
     if(window.innerWidth <= 767){
