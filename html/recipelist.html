@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/recipe.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/34ed2d6803.js" crossorigin="anonymous"></script> -->
+    <title>Zero Waste - recipe</title>
+</head>
+<body>
+    <header>
+        <a href="../html/index.html" id="logo-img"><img src="../images/logoImg.png"></a>
+        <a href="../html/index.html" id="logo-text"><img src="../images/logoText.png"></a>
+        <a href="#" id="menu-button"><img src="../images/menu-button.svg"></a>
+        <div id="search">
+            <form>
+                <button id="search-button" type="button"></button>
+                <input type="text" id="search-box" placeholder="search...">
+                <button id="reset-button" type="reset"></button>
+            </form>
+        </div>
+        <a href="#" id="noticeButton"><img src="../images/notify.svg"></a>
+        <!-- <div id="noticeBox"></div> -->
+
+
+        <a href="../html/login.html" id="loginButton"><img src="../images/login.svg"></a>
+    </header>
+    <main>
+        <div id="menu">
+            <div class="menu-content">
+                <div class="menu-content-icon" id="dashboard"><img src="../images/DashBoard.svg"></div>
+                <p class="menu-content-text"><a href="index.html">Dashboard</a></p>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content-icon" id="recipe"><img src="../images/recipe.svg"></div>
+                <p class="menu-content-text"><a href="#">Recipe</a></p>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content-icon" id="myIngredients"><img src="../images/ingredients.svg"></div>
+                <p class="menu-content-text"><a href="#">My ingredients</a></p>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content-icon" id="community"><img src="../images/community.svg"></div>
+                <p class="menu-content-text"><a href="community.html">Community</a></p>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content-icon" id="customer"><img src="../images/customerService.svg"></div>
+                <p class="menu-content-text"><a href="customer.html">Customer</a></p>
+            </div>
+            <div id="setting"></div>
+        </div>
+        <article class="commonContent">
+            <div id="recipePage">
+                <div id="recipeSearch">
+                    <form>
+                        <button id="recipe-search-button" type="button"></button>
+                        <input type="text" id="recipe-search-box" placeholder="search...">
+                        <button id="recipe-reset-button" type="reset"></button>
+                    </form>
+                    </div>
+        <div class="container">
+            <script src="https://kit.fontawesome.com/34ed2d6803.js" crossorigin="anonymous"></script> <!--아이콘 키트 최신버전 -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"><!--아이콘 키트 구버전 -->
+            <div class="category-list cf">
+            <a href="https://www.pgliquid.com/liquid/list">
+                <i class="fas fa-ellipsis-h"></i> 전체 </a> 
+            <a href="https://www.pgliquid.com/liquid/list?category=1">
+                <i class="fas fa-solid fa-bowl-food"></i><span>A</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=2">
+                <i class="fas fa-egg"></i><span>B</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=3">
+                <i class="fas fa-carrot"></i><span>C</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=4">
+                <i class="fas fa-burger"></i><span>D</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=5">
+                <i class="fas fa-fish"></i><span>E</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=6">
+                <i class="fas fa-stroopwafel"></i><span>F</span> </a>
+            <a href="https://www.pgliquid.com/liquid/list?category=7">
+                <i class="fas fa-solid fa-hotdog"></i><span>G</span> </a>
+            </div>
+            
+            <div class="cf"></div>
+       <!-- <div class="liq-car-list on" id="liquid_card_list" style="position: relative; height: 12580px;">
+                <div class="card" data-macy-complete="1" style="width: calc(25% - 12px); position: absolute; top: 0px; left: calc(25% + 4px);">
+                    <a href="https://www.pgliquid.com/liquid/1132">
+                        </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1132">
+                            <img class="image" img src="../images/Zero Table.png">
+                                                    
+                            </a><a href="#" onclick="toggle_collection('1132', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                            
+                            </div>
+                        <div class="card-content">
+                          
+                            <p class="title">ZERO TABLE&nbsp;</p>
+                            <p class="score">SAMPLE&nbsp;</p>
+                              <p class="score t">#2조</p>
+                            <p class="score s"><span style="color:#cb3636"><i class="fas fa-heart"></i> 3.95</span></p>
+                        </div>
+                </div>
+                <div class="card" data-macy-complete="" style="width: calc(25% - 12px); position: absolute; top: 0px; left: calc(25% + 4px);">
+                    <a href="https://www.pgliquid.com/liquid/1132">
+                        </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1132">
+                            <img class="image" img src="../images/Zero Table.png">
+                                                    
+                            </a><a href="#" onclick="toggle_collection('1132', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                            
+                            </div>
+                        <div class="card-content">
+                          
+                            <p class="title">ZERO TABLE&nbsp;</p>
+                            <p class="score">SAMPLE&nbsp;</p>
+                              <p class="score t">#2조</p>
+                            <p class="score s"><span style="color:#cb3636"><i class="fas fa-heart"></i> 3.95</span></p>
+                        </div>
+                </div>
+                <div class="card">
+                    <a href="https://www.pgliquid.com/liquid/2356">
+                        <div class="image-wrap">
+                            <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2356.jpg?t=1711532997')" />
+                                                    
+                            <a href="#" onclick="toggle_collection('2356', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                            
+                        </div>
+                        <div class="card-content">
+                          
+                            <p class="title">Butter Scotch&nbsp;</p>
+                            <p class="score">The Black&nbsp;</p>
+                              <p class="score t">#버터스카치 #연초</p>
+                            <p class="score s"><span style="color:#c82424"><i class="fas fa-heart"></i> 4.35</span></p>
+                        </div>
+                    </a>
+                </div> -->
+            <div class="liq-car-list on" id="liquid_card_list" style="position: relative; height: 1000px;">
+            <!-- <div class="card ban-card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 0px; left: 0px;">
+                <div class="position:relative">
+                    <div style="opacity:0">
+                        <div class="image-wrap">
+                            <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="">
+                        </div>
+                        <div class="card-content">
+                            <p class="title">-</p>
+                            <p class="score">-</p>
+                            <p class="score t">-</p>
+                            <p class="score s">-</p>
+                        </div>
+                    </div>
+		<div style="position:absolute; left:0;right:0;bottom:0;top:0;">
+<ins style="display: inline;"><iframe src="https://ads-partners.coupang.com/widgets.html?id=614807&amp;trackingCode=AF6644598&amp;template=carousel&amp;width=100%25&amp;height=100%25&amp;rUrl=https%3A%2F%2Fwww.pgliquid.com%2Fliquid%2Flist%3Fcategory%3D2&amp;tag=pa&amp;ucb=0&amp;resolution=1920x1080&amp;serverBaseUrl=https%3A%2F%2Fads-partners.coupang.com%2F&amp;logServerBaseUrl=https%3A%2F%2Flogs-partners.coupang.com%2Flog%2F#gid=614807-4fe03132567c3" scrolling="no" frameborder="0" referrerpolicy="unsafe-url" browsingtopics="" width="100%" height="100%" id="614807-4fe03132567c3" name="614807-4fe03132567c3" style="vertical-align: top;"></iframe></ins><script>
+    new PartnersCoupang.G({"id":614807,"trackingCode":"AF6644598","subId":null,"template":"carousel","width":"100%","height":"100%"});
+</script>
+		</div>
+                </div>
+            </div>
+             -->
+                    
+                                <div class="card" data-macy-complete="1" style="width: calc(18% - 1px); position: absolute; top: 0px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2356">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2356">
+                        <img class="image" img src="../images/Zero Table.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2356', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">ZERO TABLE&nbsp;</p>
+                            <p class="score">SAMPLE&nbsp;</p>
+                              <p class="score t">#2조</p>
+                            <p class="score s"><span style="color:#cb3636"><i class="fas fa-heart"></i> 3.95</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(18% - 1px); position: absolute; top: 0px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2550">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2550">
+                        <img class="image" img src="../images/Zero Table.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2550', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">ZERO TABLE&nbsp;</p>
+                        <p class="score">SAMPLE&nbsp;</p>
+                          <p class="score t">#2조</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(18% - 1px); position: absolute; top: 370px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/800">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/800">
+                        <img class="image" img src="../images/Zero Table.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('800', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">ZERO TABLE&nbsp;</p>
+                        <p class="score">SAMPLE&nbsp;</p>
+                          <p class="score t">#2조</p>
+                        <p class="score s"><span style="color:#ce4545"><i class="fas fa-heart"></i> 3.60</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(18% - 1px); position: absolute; top: 370px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2477">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2477">
+                        <img class="image" img src="../images/H.jpg">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2477', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">ZERO TABLE&nbsp;</p>
+                        <p class="score">SAMPLE&nbsp;</p>
+                          <p class="score t">#2조</p>
+                        <p class="score s"><span style="color:#ce4a4a"><i class="fas fa-heart"></i> 3.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(18% - 1px); position: absolute; top: 370px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1968">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1968">
+                        <img class="image" img src="../images/H2.jpg">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1968', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">ZERO TABLE&nbsp;</p>
+                        <p class="score">SAMPLE&nbsp;</p>
+                          <p class="score t">#2조</p>
+                        <p class="score s"><span style="color:#d67b7b"><i class="fas fa-heart"></i> 2.40</span></p>
+                    </div>
+                
+            </div>
+            
+                                <!-- <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 740px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/507">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/507">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/507.jpg?t=1711395690')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('507', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cream of the Crop&nbsp;</p>
+                        <p class="score">Enfuse Vapory&nbsp;</p>
+                          <p class="score t">(경고) #연초 #크림 #헤이즐넛 #솔트 #959</p>
+                        <p class="score s"><span style="color:#cc3d3d"><i class="fas fa-heart"></i> 3.80</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 740px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2468">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2468">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2468.jpg?t=1706624874')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2468', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty - Silver Blend&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드</p>
+                        <p class="score s"><span style="color:#c92b2b"><i class="fas fa-heart"></i> 4.20</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 740px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1973">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1973">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1973.jpg?t=1711431247')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1973', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Royal Oak&nbsp;</p>
+                        <p class="score">STORM LIQUID X COOL LIQUID&nbsp;</p>
+                          <p class="score t">#낙엽 #연초 #오크</p>
+                        <p class="score s"><span style="color:#d26262"><i class="fas fa-heart"></i> 2.95</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1110px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/162">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/162">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/162.jpg?t=1703652824')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('162', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Chairman&nbsp;</p>
+                        <p class="score">Swidn&nbsp;</p>
+                          <p class="score t">#연초 #시가</p>
+                        <p class="score s"><span style="color:#ce4a4a"><i class="fas fa-heart"></i> 3.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1110px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2182">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2182">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2182.jpg?t=1702461352')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2182', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">밥스모크&nbsp;</p>
+                        <p class="score">vapesome&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1110px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/92">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/92">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/92.jpg?t=1708578056')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('92', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">아이스 데빌 모카&nbsp;</p>
+                        <p class="score">The Alchemist&nbsp;</p>
+                          <p class="score t">#연초 #멘솔 #커피</p>
+                        <p class="score s"><span style="color:#ca2d2d"><i class="fas fa-heart"></i> 4.15</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1480px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2467">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2467">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2467.jpg?t=1699514787')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2467', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty - Bronze Blend&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #캐러멜 #바닐라</p>
+                        <p class="score s"><span style="color:#c92828"><i class="fas fa-heart"></i> 4.25</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1480px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2320">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2320">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2320.jpg?t=1697876777')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2320', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tobacco Cuban Cigar&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">#연초 #시가 #바닐라</p>
+                        <p class="score s"><span style="color:#cd3f3f"><i class="fas fa-heart"></i> 3.75</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1480px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2350">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2350">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2350.jpg?t=1696689380')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2350', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Havana&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초 #럼주 #술</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1850px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2348">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2348">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2348.jpg?t=1696688481')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2348', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - La Baya&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#블루베리 #타르트 #연초 #바나나</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1850px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/804">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/804">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/804.jpg?t=1696688257')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('804', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Zarparan&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초 #샤프란</p>
+                        <p class="score s"><span style="color:#cf4e4e"><i class="fas fa-heart"></i> 3.40</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 1850px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1780">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1780">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1780.jpg?t=1695789825')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1780', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Golden Corn&nbsp;</p>
+                        <p class="score">Mishulang&nbsp;</p>
+                          <p class="score t">#옥수수 #시가 #담배</p>
+                        <p class="score s"><span style="color:#d67d7d"><i class="fas fa-heart"></i> 2.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2220px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2190">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2190">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2190.jpg?t=1710621254')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2190', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">베놈 - 팬텀&nbsp;</p>
+                        <p class="score">Vanom&nbsp;</p>
+                          <p class="score t">#연초 #크림 #헤이즐넛 #견과류</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2220px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2553">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2553">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2553.jpg?t=1693192590')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2553', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">BLACK UNICORN MAX HAVANA ICE&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">#시가 #민트</p>
+                        <p class="score s"><span style="color:#c40707"><i class="fas fa-heart"></i> 5.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2220px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2116">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2116">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2116.jpg?t=1692472272')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2116', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Gold CCin&nbsp;</p>
+                        <p class="score">STORM LIQUID X 레드칸탈&nbsp;</p>
+                          <p class="score t">#시나몬 #커스타드 #연초</p>
+                        <p class="score s"><span style="color:#cb3636"><i class="fas fa-heart"></i> 3.95</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2590px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2469">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2469">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2469.jpg?t=1691005072')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2469', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty - Gold Blend&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#시가 #아몬드</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2590px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1920">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1920">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1920.jpg?t=1685530992')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1920', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">토트&nbsp;</p>
+                        <p class="score">PIE&nbsp;</p>
+                          <p class="score t">#시가 #담배</p>
+                        <p class="score s"><span style="color:#d88d8d"><i class="fas fa-heart"></i> 2.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2590px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1642">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1642">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1642.jpg?t=1685256220')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1642', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">CUBAN CIGAR&nbsp;</p>
+                        <p class="score">Swidn&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#c92b2b"><i class="fas fa-heart"></i> 4.20</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2960px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2458">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2458">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2458.jpg?t=1684738984')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2458', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">MOOTHIEJUICE CRANBERRY&nbsp;</p>
+                        <p class="score">VPS KOREA&nbsp;</p>
+                          <p class="score t">#크랜베리</p>
+                        <p class="score s"><span style="color:#c82424"><i class="fas fa-heart"></i> 4.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2960px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2507">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2507">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2507.jpg?t=1683810801')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2507', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">VCT BOLD&nbsp;</p>
+                        <p class="score">Ripe Vapes&nbsp;</p>
+                          <p class="score t">#바닐라 #커스터드 #연초</p>
+                        <p class="score s"><span style="color:#e6e6e6"><i class="fas fa-heart"></i> 0.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 2960px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1880">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1880">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1880.jpg?t=1710621479')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1880', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Blue Mountain&nbsp;</p>
+                        <p class="score">Staroar&nbsp;</p>
+                          <p class="score t">#멘솔 #연초 ? #원두커피 ? #커피 ?</p>
+                        <p class="score s"><span style="color:#cd4343"><i class="fas fa-heart"></i> 3.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3330px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2505">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2505">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2505.jpg?t=1681712978')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2505', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">로스트 토바코&nbsp;</p>
+                        <p class="score">용트림, 제이코리아&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3330px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/801">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/801">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/801.jpg?t=1682532490')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('801', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Black&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초</p>
+                        <p class="score s"><span style="color:#ce4a4a"><i class="fas fa-heart"></i> 3.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3330px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1645">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1645">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1645.jpg?t=1708753646')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1645', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">TABACCO PUNCH&nbsp;</p>
+                        <p class="score">Swidn&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#ca2d2d"><i class="fas fa-heart"></i> 4.15</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3700px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2472">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2472">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2472.jpg?t=1679270532')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2472', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">역병쥬스 - 블랙 넛&nbsp;</p>
+                        <p class="score">역병쥬스&nbsp;</p>
+                          <p class="score t">#연초 #담배 #견과류 #아메리카노 #커피</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3700px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1959">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1959">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1959.jpg?t=1679212856')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1959', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Quban&nbsp;</p>
+                        <p class="score">NSTY 사슴사슴&nbsp;</p>
+                          <p class="score t">#크림 #견과류 #낙엽 #시가</p>
+                        <p class="score s"><span style="color:#d99191"><i class="fas fa-heart"></i> 1.90</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 3700px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2357">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2357">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2357.jpg?t=1677240533')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2357', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">French Black&nbsp;</p>
+                        <p class="score">The Black&nbsp;</p>
+                          <p class="score t">#연초 #포도</p>
+                        <p class="score s"><span style="color:#d57777"><i class="fas fa-heart"></i> 2.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4070px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2466">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2466">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2466.jpg?t=1676862616')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2466', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Pistachio&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">#연초 #피스타치오</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4070px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2304">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2304">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2304.jpg?t=1707584895')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2304', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">NO.006 RASTARD RASCAL BASTARD&nbsp;</p>
+                        <p class="score">Vanom&nbsp;</p>
+                          <p class="score t">#커스타드 #커스터드 #크림</p>
+                        <p class="score s"><span style="color:#cd3f3f"><i class="fas fa-heart"></i> 3.75</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4070px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2208">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2208">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2208.jpg?t=1674828158')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2208', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">오짐액상 - 닥크시가&nbsp;</p>
+                        <p class="score">ZAP JUICE&nbsp;</p>
+                          <p class="score t">#달고나 #시가</p>
+                        <p class="score s"><span style="color:#d78484"><i class="fas fa-heart"></i> 2.20</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4440px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/803">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/803">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/803.jpg?t=1674311323')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('803', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Vanilla&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드 #아몬드</p>
+                        <p class="score s"><span style="color:#d05757"><i class="fas fa-heart"></i> 3.20</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4440px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2347">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2347">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2347.jpg?t=1675169880')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2347', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Dark&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초</p>
+                        <p class="score s"><span style="color:#e6e6e6"><i class="fas fa-heart"></i> 0.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4440px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1781">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1781">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1781.jpg?t=1671350848')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1781', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Black&nbsp;</p>
+                        <p class="score">Mishulang&nbsp;</p>
+                          <p class="score t">#시가 #담배</p>
+                        <p class="score s"><span style="color:#cf4c4c"><i class="fas fa-heart"></i> 3.45</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4810px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/819">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/819">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/819.jpg?t=1666853123')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('819', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cubano Saltnic&nbsp;</p>
+                        <p class="score">VGOD&nbsp;</p>
+                          <p class="score t">#연초 #시가 #바닐라</p>
+                        <p class="score s"><span style="color:#cb3838"><i class="fas fa-heart"></i> 3.90</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4810px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/958">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/958">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/958.jpg?t=1666081671')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('958', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">FLEX X CIGAR VANILLA&nbsp;</p>
+                        <p class="score">INP.LABS&nbsp;</p>
+                          <p class="score t">#입호흡 #연초</p>
+                        <p class="score s"><span style="color:#cd4141"><i class="fas fa-heart"></i> 3.70</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 4810px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1854">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1854">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1854.jpg?t=1665078626')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1854', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">아몬드 크림 타바코&nbsp;</p>
+                        <p class="score">니코뽕닷컴&nbsp;</p>
+                          <p class="score t">#연초 #아몬드 #크림</p>
+                        <p class="score s"><span style="color:#cc3a3a"><i class="fas fa-heart"></i> 3.85</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5180px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/802">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/802">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/802.jpg?t=1663238433')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('802', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Primera - Java&nbsp;</p>
+                        <p class="score">Kardinal&nbsp;</p>
+                          <p class="score t">#연초 #커피</p>
+                        <p class="score s"><span style="color:#ca3131"><i class="fas fa-heart"></i> 4.05</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5180px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1473">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1473">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1473.jpg?t=1662226163')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1473', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Brown&nbsp;</p>
+                        <p class="score">Mishulang&nbsp;</p>
+                          <p class="score t">#조리퐁 #초코 #커피밀크 #담배</p>
+                        <p class="score s"><span style="color:#ce4545"><i class="fas fa-heart"></i> 3.60</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5180px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2308">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2308">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2308.jpg?t=1659636549')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2308', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">이리프 샷 - 토바코샷&nbsp;</p>
+                        <p class="score">Eleaf&nbsp;</p>
+                          <p class="score t">#담배 #연초</p>
+                        <p class="score s"><span style="color:#dfb9b9"><i class="fas fa-heart"></i> 1.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5550px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1410">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1410">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1410.jpg?t=1659266253')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1410', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Classita&nbsp;</p>
+                        <p class="score">쥬스박스&nbsp;</p>
+                          <p class="score t">#연초 #타바코</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5550px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1881">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1881">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1881.jpg?t=1673158031')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1881', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Black Mountain&nbsp;</p>
+                        <p class="score">Staroar&nbsp;</p>
+                          <p class="score t">#연초 ? #커피 ? #원두커피 ?</p>
+                        <p class="score s"><span style="color:#cd4141"><i class="fas fa-heart"></i> 3.70</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5550px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2119">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2119">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2119.jpg?t=1654956823')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2119', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Kingside Tobacco&nbsp;</p>
+                        <p class="score">Five Pawns&nbsp;</p>
+                          <p class="score t">#벌리 #담배 #홉 #보리</p>
+                        <p class="score s"><span style="color:#d47070"><i class="fas fa-heart"></i> 2.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5920px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2117">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2117">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2117.jpg?t=1654956691')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2117', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Elo Tobacco&nbsp;</p>
+                        <p class="score">Five Pawns&nbsp;</p>
+                          <p class="score t">#연초 #브라질 #감귤 #바닐라 #캬라멜 #라임</p>
+                        <p class="score s"><span style="color:#cf5151"><i class="fas fa-heart"></i> 3.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5920px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/139">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/139">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/139.jpg?t=1691716488')">
+                                                <img class="yt-logo" src="https://www.pgliquid.com/images/youtube_social_icon_red.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('139', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cubano Black saltnic&nbsp;</p>
+                        <p class="score">VGOD&nbsp;</p>
+                          <p class="score t">#연초 #크림 #바닐라</p>
+                        <p class="score s"><span style="color:#d05353"><i class="fas fa-heart"></i> 3.30</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 5920px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/936">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/936">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/936.jpg?t=1655221608')">
+                                                <img class="yt-logo" src="https://www.pgliquid.com/images/youtube_social_icon_red.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('936', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Crazy - New Tribeca&nbsp;</p>
+                        <p class="score">베이퍼스 유나이티드&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #트리베카</p>
+                        <p class="score s"><span style="color:#d67d7d"><i class="fas fa-heart"></i> 2.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6290px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2240">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2240">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2240.jpg?t=1653527599')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2240', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">타바코 멘솔&nbsp;</p>
+                        <p class="score">Chronic Juice&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6290px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/912">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/912">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/912.jpg?t=1655390019')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('912', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Black Flag Risen&nbsp;</p>
+                        <p class="score">Five Pawns&nbsp;</p>
+                          <p class="score t">#연초 #커피 #송로버섯 #호두 #모카</p>
+                        <p class="score s"><span style="color:#d15e5e"><i class="fas fa-heart"></i> 3.05</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6290px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/246">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/246">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/246.jpg?t=1655921568')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('246', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">초코 타바코&nbsp;</p>
+                        <p class="score">The Alchemist&nbsp;</p>
+                          <p class="score t">#연초 #초콜릿</p>
+                        <p class="score s"><span style="color:#cd3f3f"><i class="fas fa-heart"></i> 3.75</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6660px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/165">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/165">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/165.jpg?t=1653075687')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('165', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tribeca&nbsp;</p>
+                        <p class="score">Halo&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #캐러멜</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6660px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1624">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1624">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1624.jpg?t=1675169896')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1624', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">SWIDN VIRGINIA&nbsp;</p>
+                        <p class="score">Swidn&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#c71d1d"><i class="fas fa-heart"></i> 4.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 6660px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2225">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2225">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2225.jpg?t=1641319131')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2225', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">발렌시가&nbsp;</p>
+                        <p class="score">마샤&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7030px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/408">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/408">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/408.jpg?t=1639275371')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('408', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Braavos&nbsp;</p>
+                        <p class="score">The Alchemist&nbsp;</p>
+                          <p class="score t">#연초 #꿀 #크림</p>
+                        <p class="score s"><span style="color:#cd4343"><i class="fas fa-heart"></i> 3.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7030px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1495">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1495">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1495.jpg?t=1637776648')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1495', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cup Of Cigar - 버터 토바코&nbsp;</p>
+                        <p class="score">코드웍스&nbsp;</p>
+                          <p class="score t">#연초 #버터</p>
+                        <p class="score s"><span style="color:#d36b6b"><i class="fas fa-heart"></i> 2.75</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7030px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1010">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1010">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1010.jpg?t=1637222575')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1010', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">올드스쿨 - 스네이크 타바코&nbsp;</p>
+                        <p class="score">용트림&nbsp;</p>
+                          <p class="score t">#연초 #꿀</p>
+                        <p class="score s"><span style="color:#cd4343"><i class="fas fa-heart"></i> 3.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7400px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/467">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/467">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/467.jpg?t=1635885647')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('467', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty Juice - Gold Blend&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #아몬드</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7400px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2180">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2180">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2180.jpg?t=1701940827')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2180', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">데일리 쥬스 - 발렌타인&nbsp;</p>
+                        <p class="score">베이프보이&nbsp;</p>
+                          <p class="score t">#카카오 #위스키</p>
+                        <p class="score s"><span style="color:#c40707"><i class="fas fa-heart"></i> 5.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7400px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/891">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/891">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/891.jpg?t=1634232103')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('891', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Dompe Tobacco Saltnic&nbsp;</p>
+                        <p class="score">VIP Juice&nbsp;</p>
+                          <p class="score t">#연초</p>
+                        <p class="score s"><span style="color:#d78282"><i class="fas fa-heart"></i> 2.25</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7770px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1219">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1219">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1219.jpg?t=1633891741')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1219', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">크리프&nbsp;</p>
+                        <p class="score">Vermont&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#ce4545"><i class="fas fa-heart"></i> 3.60</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7770px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/565">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/565">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/565.jpg?t=1632321673')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('565', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">VCT Salt&nbsp;</p>
+                        <p class="score">Ripe Vapes&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드 #아몬드</p>
+                        <p class="score s"><span style="color:#d26262"><i class="fas fa-heart"></i> 2.95</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 7770px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2121">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2121">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2121.jpg?t=1630651614')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2121', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Royal Tobacco&nbsp;</p>
+                        <p class="score">Five Pawns&nbsp;</p>
+                          <p class="score t">#하바노 #담배 #트로피칼</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8140px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2093">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2093">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2093.jpg?t=1691142235')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2093', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">지피지기 - 탑토바코&nbsp;</p>
+                        <p class="score">베이플&nbsp;</p>
+                          <p class="score t">#연초 #Vaple</p>
+                        <p class="score s"><span style="color:#cc3a3a"><i class="fas fa-heart"></i> 3.85</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8140px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/579">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/579">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/579.jpg?t=1672831698')">
+                                                <img class="yt-logo" src="https://www.pgliquid.com/images/youtube_social_icon_red.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('579', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty Salt - Silver Blend Salt(판매중지)&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드</p>
+                        <p class="score s"><span style="color:#ddaaaa"><i class="fas fa-heart"></i> 1.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8140px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1268">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1268">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1268.jpg?t=1624956164')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1268', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">SPECIAL MARLBORO&nbsp;</p>
+                        <p class="score">VAPECROWN&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#d57777"><i class="fas fa-heart"></i> 2.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8510px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1938">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1938">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1938.jpg?t=1624955102')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1938', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Mezzrow Origin&nbsp;</p>
+                        <p class="score">Mezz X Vapeshop&nbsp;</p>
+                          <p class="score t">#담배 #OG9</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8510px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/356">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/356">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/356.jpg?t=1689134338')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('356', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tobacco Cuban Cigar Salt (판매중지)&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">#연초 #시가 #바닐라</p>
+                        <p class="score s"><span style="color:#ce4a4a"><i class="fas fa-heart"></i> 3.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8510px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/2035">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2035">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2035.jpg?t=1621680190')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2035', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">커스타드 타바코&nbsp;</p>
+                        <p class="score">Good &amp; Good&nbsp;</p>
+                          <p class="score t">#커드타드 #연초 #담배 #베오니</p>
+                        <p class="score s"><span style="color:#cf5151"><i class="fas fa-heart"></i> 3.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8880px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/245">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/245">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/245.jpg?t=1670214045')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('245', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">헤이즐 타바코&nbsp;</p>
+                        <p class="score">The Alchemist&nbsp;</p>
+                          <p class="score t">#연초 #헤이즐넛</p>
+                        <p class="score s"><span style="color:#c82020"><i class="fas fa-heart"></i> 4.45</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8880px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/2068">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2068">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2068.jpg?t=1619670718')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2068', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">히든 - 룰라&nbsp;</p>
+                        <p class="score">앤트코리아&nbsp;</p>
+                          <p class="score t">#마룰라 #연초</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 8880px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/358">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/358">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/358.jpg?t=1619443673')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('358', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tobacco Caramel Salt&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">(경고) #연초 #캐러멜</p>
+                        <p class="score s"><span style="color:#dfb9b9"><i class="fas fa-heart"></i> 1.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9250px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/539">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/539">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/539.jpg?t=1618464892')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('539', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">레드 시가&nbsp;</p>
+                        <p class="score">GOBLIN&nbsp;</p>
+                          <p class="score t">#연초</p>
+                        <p class="score s"><span style="color:#cb3434"><i class="fas fa-heart"></i> 4.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9250px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1169">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1169">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1169.jpg?t=1617808550')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1169', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">로얄시가&nbsp;</p>
+                        <p class="score">자담&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9250px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1483">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1483">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1483.jpg?t=1612152837')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1483', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">하바나시가&nbsp;</p>
+                        <p class="score">Zebra Liquid&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#dfb9b9"><i class="fas fa-heart"></i> 1.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9620px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/2006">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/2006">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/2006.jpg?t=1610435748')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('2006', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Peach Tobacco&nbsp;</p>
+                        <p class="score">Cypher&nbsp;</p>
+                          <p class="score t">#토바코 #복숭아 #연초 #OG9</p>
+                        <p class="score s"><span style="color:#dfb9b9"><i class="fas fa-heart"></i> 1.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9620px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1082">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1082">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1082.jpg?t=1609338741')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1082', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">벌크베이프 - 카푸치노시가&nbsp;</p>
+                        <p class="score">Bulk Vape&nbsp;</p>
+                          <p class="score t">#타바코 #카푸치노</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9620px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/630">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/630">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/630.jpg?t=1608632353')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('630', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Neat Tobacco&nbsp;</p>
+                        <p class="score">HACKSTER SALT&nbsp;</p>
+                          <p class="score t">#연초</p>
+                        <p class="score s"><span style="color:#d47070"><i class="fas fa-heart"></i> 2.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9990px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/147">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/147">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/147.jpg?t=1642747365')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('147', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cubano Silver SaltNic&nbsp;</p>
+                        <p class="score">VGOD&nbsp;</p>
+                          <p class="score t">#시가 #연초 #커스터드</p>
+                        <p class="score s"><span style="color:#cd4141"><i class="fas fa-heart"></i> 3.70</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9990px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1083">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1083">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1083.jpg?t=1608632180')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1083', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">벌크베이프 - 크리미시가&nbsp;</p>
+                        <p class="score">Bulk Vape&nbsp;</p>
+                          <p class="score t">#타바코 #크림</p>
+                        <p class="score s"><span style="color:#d36b6b"><i class="fas fa-heart"></i> 2.75</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 9990px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/580">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/580">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/580.jpg?t=1672831696')">
+                                                <img class="yt-logo" src="https://www.pgliquid.com/images/youtube_social_icon_red.png">
+                                                
+                        </a><a href="#" onclick="toggle_collection('580', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty Salt - Bronze Blend Salt(판매중지)&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #캐러멜 #바닐라</p>
+                        <p class="score s"><span style="color:#d67b7b"><i class="fas fa-heart"></i> 2.40</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10360px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1937">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1937">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1937.jpg?t=1607841426')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1937', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Mezzrow Menthol&nbsp;</p>
+                        <p class="score">Mezz X Vapeshop&nbsp;</p>
+                          <p class="score t">#멘솔 #담배 #민트 #OG9</p>
+                        <p class="score s"><span style="color:#d57777"><i class="fas fa-heart"></i> 2.50</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10360px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1069">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1069">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1069.jpg?t=1606168822')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1069', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Marlboro Light&nbsp;</p>
+                        <p class="score">Queen&nbsp;</p>
+                          <p class="score t">#말라</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10360px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/846">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/846">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/846.jpg?t=1606168221')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('846', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Cuban Cigar Salt&nbsp;</p>
+                        <p class="score">Cypher&nbsp;</p>
+                          <p class="score t">#연초 #시가 #OG9</p>
+                        <p class="score s"><span style="color:#dfb9b9"><i class="fas fa-heart"></i> 1.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10730px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/359">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/359">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/359.jpg?t=1672831360')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('359', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tobacco Pistachio Salt(판매중지)&nbsp;</p>
+                        <p class="score">BLVK&nbsp;</p>
+                          <p class="score t">#연초 #피스타치오</p>
+                        <p class="score s"><span style="color:#d88d8d"><i class="fas fa-heart"></i> 2.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10730px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1593">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1593">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1593.jpg?t=1605143265')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1593', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Tobacco Leaf Meal Cream - Triple Cigar&nbsp;</p>
+                        <p class="score">모코리퀴드&nbsp;</p>
+                          <p class="score t">#크림 #담배 #곡식</p>
+                        <p class="score s"><span style="color:#d88d8d"><i class="fas fa-heart"></i> 2.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 10730px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/465">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/465">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/465.jpg?t=1605084292')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('465', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Nasty Juice - Bronze Blend&nbsp;</p>
+                        <p class="score">Nasty&nbsp;</p>
+                          <p class="score t">#연초 #캐러멜 #바닐라</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11100px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1080">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1080">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1080.jpg?t=1603973507')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1080', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">벌크베이프 - 에쎔버&nbsp;</p>
+                        <p class="score">Bulk Vape&nbsp;</p>
+                          <p class="score t">#타바코</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11100px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1251">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1251">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1251.jpg?t=1602992763')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1251', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Vanilla Tobacco&nbsp;</p>
+                        <p class="score">Black Lable&nbsp;</p>
+                          <p class="score t">#블랙라벨 #연초 #바닐라</p>
+                        <p class="score s"><span style="color:#cf5151"><i class="fas fa-heart"></i> 3.35</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11100px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/750">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/750">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/750.jpg?t=1601899178')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('750', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">Russian Cream Salt&nbsp;</p>
+                        <p class="score">The Finest&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드</p>
+                        <p class="score s"><span style="color:#c40707"><i class="fas fa-heart"></i> 5.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11470px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1249">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1249">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1249.jpg?t=1601872128')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1249', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">VCT&nbsp;</p>
+                        <p class="score">Deep Juice&nbsp;</p>
+                          <p class="score t">#연초 #바닐라 #커스터드 #아몬드</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11470px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1893">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1893">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1893.jpg?t=1600917973')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1893', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">커피 크림 타바코&nbsp;</p>
+                        <p class="score">니코뽕닷컴&nbsp;</p>
+                          <p class="score t">#연초 #커피 #크림</p>
+                        <p class="score s"><span style="color:#d47070"><i class="fas fa-heart"></i> 2.65</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11470px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1882">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1882">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1882.jpg?t=1600851539')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1882', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">New Cuban cigar&nbsp;</p>
+                        <p class="score">Staroar&nbsp;</p>
+                          <p class="score t">#연초 #시가 #쿠반시가</p>
+                        <p class="score s"><span style="color:#c40707"><i class="fas fa-heart"></i> 5.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11840px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1076">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1076">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1076.jpg?t=1596800961')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1076', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">벌크베이프 - 버지니아&nbsp;</p>
+                        <p class="score">Bulk Vape&nbsp;</p>
+                          <p class="score t">#타바코 #견과류</p>
+                        <p class="score s"><span style="color:#d88d8d"><i class="fas fa-heart"></i> 2.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11840px; left: calc(33.3333% + 5.33333px);">
+                <a href="https://www.pgliquid.com/liquid/1513">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1513">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1513.jpg?t=1596552470')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1513', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">봄꽃 [바닐라꽃]&nbsp;</p>
+                        <p class="score">플라워리퀴드&nbsp;</p>
+                          <p class="score t">#바닐라 #너츠</p>
+                        <p class="score s"><span style="color:#d88d8d"><i class="fas fa-heart"></i> 2.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 11840px; left: calc(66.6667% + 10.6667px);">
+                <a href="https://www.pgliquid.com/liquid/1572">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1572">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1572.jpg?t=1595949694')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1572', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">마일드시가&nbsp;</p>
+                        <p class="score">Halloween&nbsp;</p>
+                          <p class="score t">#담배</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div>
+            
+                                <div class="card" data-macy-complete="1" style="width: calc(33.3333% - 10.6667px); position: absolute; top: 12210px; left: 0px;">
+                <a href="https://www.pgliquid.com/liquid/1205">
+                    </a><div class="image-wrap"><a href="https://www.pgliquid.com/liquid/1205">
+                        <img class="image" src="https://www.pgliquid.com/images/trans.gif" style="background-image: url('https://www.pgliquid.com/files/images/liquid/1205.jpg?t=1597548511')">
+                                                
+                        </a><a href="#" onclick="toggle_collection('1205', this);return false;" class="add-coll "><i class="fas fa-bookmark on"></i><i class="far fa-bookmark off"></i></a>
+                        
+                    </div>
+                    <div class="card-content">
+                      
+                        <p class="title">모턴 타바코&nbsp;</p>
+                        <p class="score">LAON VAPE X 니코뽕닷컴&nbsp;</p>
+                          <p class="score t">#연초 #꽃</p>
+                        <p class="score s"><span style="color:#d26060"><i class="fas fa-heart"></i> 3.00</span></p>
+                    </div>
+                
+            </div> -->
+            
+                     
+            </div>    
+            <div class="cf"></div>
+             
+            </div>
+            <div class="pagination-wrapper">
+            </div>
+
+        </div>
+        </article>
+    </main>
+
+    <script src="../javaScript/main.js"></script>
+</body>
+</html>
