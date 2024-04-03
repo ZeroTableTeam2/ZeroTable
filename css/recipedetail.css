@@ -1,36 +1,17 @@
-#recipedetail {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+.dark .card {
+    background-color: rgb(56, 56, 56);
 }
-.container {
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
-}
-.recipe-header {
-    background: #caafaf;
-    color: #fff;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-}
-.recipe-section {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-}
-.recipe-section h2 {
-    color: #333;
-    margin-top: 0;
-}
-.recipe-section ul {
-    list-style: inside square;
-}
-.recipe-section p, .recipe-section ul {
-    margin: 10px 0;
-}
+
+.dark .card { background-color: rgba(56,56,56,1); }
+
+@mixin sr-only-focusable() {
+    &:active,
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+    }
+  }
