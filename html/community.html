@@ -9,6 +9,9 @@
     <link href="../css/reset.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
     <link href="../css/community.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/write.css">
     <title>Zero Table - community</title>
 </head>
 <body>
@@ -53,9 +56,170 @@
             </div>
             <div id="setting"></div>
         </div>
+        
         <article class="commonContent">
             <div id="communityPage">
                 
+                <!--버튼-->
+                <div id="headselect">
+                <button id="notiButton" onclick="changeContainer('noti')">공지사항</button>
+                <button id="newnotiButton" onclick="changeContainer('free')">자유</button>
+                <button id="reciButton" onclick="changeContainer('reci')">레시피</button>
+                </div>
+
+                <!--공지사항 테이블-->
+                <div class="container containerActive" id="noti">
+                    <div class="tbl_area">
+                        <table cellspacing="0" cleepadding="0" class="tbl_list">
+                            <colgroup>
+                            <col style="width: 90px;">
+                            <col style="width: auto;">
+                            <col style="width: 130px;">
+                            <col style="width: 130px;">
+                            <col style="width: 120px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">공지</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="first">
+                                    <td>1</td>
+                                    <a href="#"><td>제목</td></a>
+                                    <td>김김김</td>
+                                    <td>2024.03.27</td>
+                                    <td>0</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!--자유게시판 테이블-->
+                <div class="container containerNone" id="free">
+                    <div class="tbl_area">
+                            <table cellspacing="0" cleepadding="0" class="tbl_list">
+                                <colgroup>
+                                <col style="width: 90px;">
+                                <col style="width: auto;">
+                                <col style="width: 130px;">
+                                <col style="width: 130px;">
+                                <col style="width: 120px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">공지</th>
+                                        <th scope="col">작성자</th>
+                                        <th scope="col">등록일</th>
+                                        <th scope="col">조회수</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="first">
+                                        <td>2</td>
+                                        <td>제목2</td>
+                                        <td>김김2</td>
+                                        <td>2024.03.27</td>
+                                        <td>1</td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            <!--자유페이지 하단 -->
+                            <div class="footer">
+                                <ul>
+                                    <li class="on">
+                                        <a title="1번 페이지" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                                <div class="footer2">
+                                <button id="writeButton" onclick="changeContainer('write')">글 작성</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+                <!--레시피-->
+                <div class="container containerNone" id="reci">
+                    <div class="tbl_area">
+                        <table cellspacing="0" cleepadding="0" class="tbl_list">
+                            <colgroup>
+                            <col style="width: 90px;">
+                            <col style="width: auto;">
+                            <col style="width: 130px;">
+                            <col style="width: 130px;">
+                            <col style="width: 120px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">공지</th>
+                                    <th scope="col">작성자</th>
+                                    <th scope="col">등록일</th>
+                                    <th scope="col">조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="first">
+                                    <td>3</td>
+                                    <td>제목3</td>
+                                    <td>김김3</td>
+                                    <td>2024.03.27</td>
+                                    <td>2</td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        <div class="footer">
+                            <ul>
+                                <li class="on">
+                                    <a title="1번 페이지" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                            <div class="footer2">
+                                <button id="writeButton" onclick="changeContainer('write')">글 작성</button>
+                            </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+
+                <div class="writePage container containerNone" id="write">
+                    <form action="community.html" method="post">
+                        <table>
+                        <tr><td><h2>글쓰기</h2></td></tr>
+                        
+                        <tr><td class="hearder">Title</td></tr>
+                        <tr><td><input type="text" placeholder="제목을 입력하세요" name="title"></td></tr>
+                        
+                        <tr><td class="header">File</td></tr>
+                        <tr><td><input type="file" placeholder="이미지 선택"></td></tr>
+                        
+                        <tr><td class="header">Comment</td></tr>
+                        <tr><td><textarea placeholder="내용을 입력하세요" name="detail"></textarea></td></tr>
+                        
+                        <tr><td><input type="submit" value="등록" onclick="alert('작성 완료')">&nbsp;
+                        <input type="submit" value="취소" onclick="alert('작성 취소')"></td></tr>
+                        </table>
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+
             </div>
         </article>
     </main>
