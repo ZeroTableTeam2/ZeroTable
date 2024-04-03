@@ -14,3 +14,16 @@ function changeContainer(event, id){
 }
 
 goToFindButton.addEventListener('click', event => changeContainer(event, 'find'));
+
+
+let joinPasswordCheckBox = document.getElementById('joinPasswordCheckBox');
+let joinPasswordBox = document.getElementById('joinPasswordBox');
+
+joinPasswordCheckBox.addEventListener('input', function(){
+    if(joinPasswordBox.value != joinPasswordCheckBox.value){
+        document.querySelector('.joinCheck:nth-of-type(2)').style.display = "block";
+    }
+    else{
+        document.querySelector('.joinCheck:nth-of-type(2)').style.display = "none";
+    }
+});
